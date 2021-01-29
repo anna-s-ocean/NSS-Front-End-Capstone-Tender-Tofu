@@ -1,0 +1,40 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <style>
+  img {
+    height: 100px;
+    float: left;
+  }
+  </style>
+  <script src="text/javascript"></script>
+    </head>
+    <body>
+    
+    <div id="images"></div>
+    <script>
+        (function() {
+            $.ajax({
+            url      : 'http://api.yelp.com/business_review_search',
+            dataType : 'jsonp',
+            data     : {term : 'restaurant', lat : 36.174465, long : -86.767960, // callback is not necessary
+            success  : function(data) {
+                // data is a normal response shown on yelp's API page
+            }
+        }
+        // .then(function( data ) {
+        //   $.each( data.items, function( i, item ) {
+        //     $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+        //     if ( i === 3 ) {
+        //       return false;
+        //     }
+        //   })
+        // })
+        .then(console.log(data))
+    })})
+</script>
+
+</body>
+</html> -->
