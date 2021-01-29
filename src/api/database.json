@@ -1,0 +1,29 @@
+{
+    "users": [
+        {
+            "id" : 1, 
+            "userName" : "anna",
+            "email" : "anna@moore.com"
+        }
+    ],
+    "singleUserRestuarantMatch" : [
+        {
+            "id": 1,
+            "userId": 1, 
+            "restaurantId" : 1,
+            "restuarantName" : "Deep Sea Vegan",
+            "EateryOutingId" : 1
+        }
+    ], 
+    "eateryOuting" : [
+        {
+            "id": 1, 
+            "userId": 1,
+            "friendId" : 2, 
+            "restuarantId" : 1,
+            "dateTime" : ,
+            "restuarantName" : "varcharacter"
+
+        }
+    ]
+}
