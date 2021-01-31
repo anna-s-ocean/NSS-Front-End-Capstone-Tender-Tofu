@@ -7,14 +7,14 @@ import { UserList } from "./user/UserList"
 export const ApplicationViews = () => {
     return (
         <>
-             {/* Render the location list when http://localhost:3000/ */}
+             {/* Renders when http://localhost:3000/ */}
              <Route exact path="/">
                 <Home />
             </Route>
 
-            {/* Render the user list when http://localhost:3000/ */}
+            {/* Render the user list when http://localhost:3000/users */}
             <UserProvider>
-                <Route path="/user">
+                <Route path="/users">
                     <UserList/>
                 </Route>
             </UserProvider>

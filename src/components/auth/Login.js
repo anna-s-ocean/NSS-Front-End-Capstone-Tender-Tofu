@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom"
 import "./Login.css"
 
-//how does this need to be refactored to Kennel
+
 
 export const Login = props => {
     const email = useRef()
@@ -12,7 +12,7 @@ export const Login = props => {
     const history = useHistory()
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/user?email=${email.current.value}`)
+        return fetch(`http://localhost:8088/users?email=${email.current.value}`)
             .then(res => res.json())
             .then(user => user.length ? user[0] : false)
     }
