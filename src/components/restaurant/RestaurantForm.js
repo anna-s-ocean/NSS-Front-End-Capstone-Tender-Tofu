@@ -15,6 +15,7 @@ export const RestaurantForm = () => {
     const { users, getUsers } = useContext(UserContext)
     const { addEateryOuting } = useContext(MatchesContext)
     const [value, onChange] = useState(new Date())
+    const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
 
 
     //what is going to be updated
@@ -24,9 +25,9 @@ export const RestaurantForm = () => {
     //set empty for now or set as 0 and update later
     //restaurant foriegn key and restaurant name
     const [restaurant, setRestaurant] = useState({
-        userId: "",
-        friendId: "",
-        dateTime: ""
+        userId: currentUserId,
+        friendId: 0,
+        dateTime: null
       });
 
 
@@ -54,8 +55,16 @@ export const RestaurantForm = () => {
         /* When changing a state object or array,
         always create a copy, make changes, and then set state.*/
         const newRestaurant = { ...restaurant }
-        
-        newRestaurant[event.target.id] = event.target.value
+        debugger;
+        if (typeof event.getMonth === 'function'){
+          newRestaurant.dateTime = event
+        }else {
+          let selectedVal = event.target.value
+          if (event.target.id.includes("Id")) {
+            selectedVal = parseInt(selectedVal)
+          }
+          newRestaurant[event.target.id] = selectedVal
+        }
         // update state
         setRestaurant(newRestaurant)
     }
@@ -69,16 +78,11 @@ export const RestaurantForm = () => {
 
     const handleClickSaveRestaurantOuting = (event) => {
       event.preventDefault()
-
-      // const friendId = parseInt(users.id)
-      const friendId = 0
-      const date = 0
       
-
-      if (friendId === 0 || date === 0) {
+      if (restaurant.friendId === 0 || restaurant.dateTime === null) {
         window.alert("Please select a user and a date")
       } else {
-        //invoke addAnimal passing animal as an argument.
+        //invoke addEateryOuting passing restaurant as an argument.
         //once complete, change the url and display the animal list
         addEateryOuting(restaurant)
         .then(() => history.push("/")) //what needs to be displayed
@@ -97,24 +101,29 @@ export const RestaurantForm = () => {
                   <select defaultValue={restaurant.friendId} name="friendId" id="friendId" onChange={handleControlledInputChange} className="form-control" >
                       
                       <option value="0">Select a user</option>
-                      {users.map(u => (
-                        if(u.id != parseInt(window.localStorage.getItem('user_tender_tofu'))){
+                      {users.map(u => {
+                        if(u.id != currentUserId){
 
-                          <option key={u.id} value={u.id}>
-                              {u.name}
-                          </option>
+                          return (
+                            <option key={u.id} value={u.id}>
+                            {u.name}
+                            </option>  
+                        )
                         }
-                      ))}
+                        })
+                      }
                   </select>
             </div>
           </fieldset>
           <fieldset>
             <div className="form-group">
               <label htmlFor="date">Select a date: </label>
-              <div>
+              <div >
                 <Calendar
-                  onChange={onChange}
+                  onChange={ event =>
+                    handleControlledInputChange(event)}
                   value={value}
+                  id="dateTime"
                 />
               </div>
             </div>
