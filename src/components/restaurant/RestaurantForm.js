@@ -1,14 +1,20 @@
+import React, { useContext, useEffect, useState } from "react"
 import { UserList } from "../user/UserList"
+import { UserContext } from "../user/UserProvider"
+import { RestaurantContext } from "./RestaurantProvider"
+import { MatchesContext } from "../matches/MatchesProvider"
+import { useHistory, useParams } from 'react-router-dom';
+import  { Calendar } from 'react-calendar'
 
 // includes drop down with list of Users 
 // includes drop down 📅 and time slots
 // button to confirm the selection
 
-import React, { useContext, useEffect, useState } from "react"
-import { useHistory, useParams } from 'react-router-dom';
-
 export const RestaurantForm = () => {
-    const { } = useContext(RestaurantContext)
+    // const { } = useContext(RestaurantContext)
+    const { users, getUsers } = useContext(UserContext)
+    const { addEateryOuting } = useContext(MatchesContext)
+    const [value, onChange] = useState(new Date())
 
 
     //what is going to be updated
@@ -20,40 +26,103 @@ export const RestaurantForm = () => {
     const [restaurant, setRestaurant] = useState({
         userId: "",
         friendId: "",
-        dateTime: "",
+        dateTime: ""
       });
 
 
       const history = useHistory();
-    //   const { locationId } = useParams();
-      const [isLoading, setIsLoading] = useState(true);;
+    //   const { friendId } = useParams();
+      const [isLoading, setIsLoading] = useState(true);
 
 
-
+       /*
+      Reach out to the world and get *** state on initialization, 
+      so we can provide their data in the form dropdowns
+      */
       useEffect( () => {
+        getUsers()
+        // .then( ()=> {
+
+        // })
 
       }, [])
 
-    //   update for this field
+    
       //when a field changes, update state. The return will re-render and display based on the values in state
-        // NOTE! What's happening in this function can be very difficult to grasp. Read it over many times and ask a lot questions about it.
     //Controlled component
     const handleControlledInputChange = (event) => {
         /* When changing a state object or array,
         always create a copy, make changes, and then set state.*/
-        const newEmployee = { ...employee }
+        const newRestaurant = { ...restaurant }
         
-        newEmployee[event.target.id] = event.target.value
+        newRestaurant[event.target.id] = event.target.value
         // update state
-        setEmployee(newEmployee)
+        setRestaurant(newRestaurant)
     }
 
+    //grab the user id of the current user
+    //grab the user id of the user that has been selected on the drop down
+    //grab the date
+    //grab the time internal 
+    //push all of that info into eateryOuting in database.json
+    //then display the restaurant cards
 
     const handleClickSaveRestaurantOuting = (event) => {
+      event.preventDefault()
 
+      // const friendId = parseInt(users.id)
+      const friendId = 0
+      const date = 0
+      
+
+      if (friendId === 0 || date === 0) {
+        window.alert("Please select a user and a date")
+      } else {
+        //invoke addAnimal passing animal as an argument.
+        //once complete, change the url and display the animal list
+        addEateryOuting(restaurant)
+        .then(() => history.push("/")) //what needs to be displayed
+      }
     }
 
+    //do I want the form to have label for the outing 
+    //like New job celebration dinner
+    // or monthly catching up?
     return (
-        
+        <form className ="restaurantForm">
+          <h2 className= "restaurantForm_title">New Restaurant Outing </h2>
+          <fieldset>
+            <div className="form-group">
+              <label htmlFor="user">Select a user: </label>
+                  <select defaultValue={restaurant.friendId} name="friendId" id="friendId" onChange={handleControlledInputChange} className="form-control" >
+                      
+                      <option value="0">Select a user</option>
+                      {users.map(u => (
+                        if(u.id != parseInt(window.localStorage.getItem('user_tender_tofu'))){
+
+                          <option key={u.id} value={u.id}>
+                              {u.name}
+                          </option>
+                        }
+                      ))}
+                  </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div className="form-group">
+              <label htmlFor="date">Select a date: </label>
+              <div>
+                <Calendar
+                  onChange={onChange}
+                  value={value}
+                />
+              </div>
+            </div>
+          </fieldset>
+          <button className="btn btn-primary"
+            onClick={handleClickSaveRestaurantOuting}>
+            Confirm Restaurant Outing 
+          </button>
+        </form>
     )
 }

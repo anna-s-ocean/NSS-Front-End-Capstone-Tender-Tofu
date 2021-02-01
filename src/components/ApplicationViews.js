@@ -6,6 +6,8 @@ import { UserList } from "./user/UserList"
 
 import { RestaurantProvider } from "./restaurant/RestaurantProvider"
 import { RestaurantCard } from "./restaurant/RestaurantCard"
+import { RestaurantForm } from "./restaurant/RestaurantForm"
+import { MatchesProvider } from "./matches/MatchesProvider"
 
 export const ApplicationViews = () => {
     return (
@@ -21,6 +23,17 @@ export const ApplicationViews = () => {
                     <UserList/>
                 </Route>
             </UserProvider>
+
+            {/* Render the restaurant form when http://localhost:3000/restaurantOuting */}
+            {/* <RestaurantProvider> */}
+            <MatchesProvider>
+                <UserProvider>
+                    <Route path ="/restaurantOuting">
+                        <RestaurantForm />
+                    </Route>
+                </UserProvider>
+            </MatchesProvider>
+            {/* </RestaurantProvider> */}
 
         </>
     )
