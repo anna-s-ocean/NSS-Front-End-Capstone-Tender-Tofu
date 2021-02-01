@@ -10,7 +10,7 @@ export const TenderTofu = () => (
   <>
     <Route
       render={() => {
-        if (localStorage.getItem("tender_tofu_user")) {
+        if (localStorage.getItem("user_tender_tofu")) {
           return (
             <>
               <NavBar />

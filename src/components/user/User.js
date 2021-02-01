@@ -13,7 +13,7 @@ export const UserCard = ({ user }) => {
                     {user.name}
                 </Link>
             </h3>
-            <div className="user__address">{user.address}</div>
+            <div className="user__address">{user.email}</div>
         </section>
 
 

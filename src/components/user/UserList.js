@@ -24,9 +24,6 @@ export const UserList = () => {
     <div className= "users">
     {console.log("UserList: Render", users)}
       <h2>Users</h2>
-      <button onClick={() => {history.push("/users/create")}}>
-          Add User
-      </button>
       
       {
      users.map( user => {

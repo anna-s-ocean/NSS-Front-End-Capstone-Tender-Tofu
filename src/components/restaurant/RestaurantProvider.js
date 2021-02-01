@@ -32,7 +32,7 @@ export const RestaurantProvider = () => {
 
      ).then(res => res.json())
      .then(parsedRestaurants => {
-         restautant = parsedRestaurants.data
+         restaurant = parsedRestaurants.data
      })
      .then(console.log)
 }

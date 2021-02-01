@@ -5,12 +5,13 @@ export const UserContext = createContext()
 
 // This component establishes what data can be used.
 export const UserProvider = (props) => {
-    const [user, setUser] = useState([])
+    const [users, setUsers] = useState([])
 
-    const getUser = () => {
+    const getUsers = () => {
         return fetch("http://localhost:8088/users")
         .then(res => res.json())
-        .then(setUser)
+        .then(console.log())
+        .then(setUsers)
     }
 
     const addUser = UserObj => {
@@ -21,7 +22,7 @@ export const UserProvider = (props) => {
             },
             body: JSON.stringify(UserObj)
         })
-        .then(getUser)
+        .then(getUsers)
     }
 
     const getUserById = (id) => {
@@ -36,7 +37,7 @@ export const UserProvider = (props) => {
           },
           body: JSON.stringify(user)
         })
-          .then(getUser)
+          .then(getUsers)
       }
     /*
         You return a context provider which has the
@@ -46,7 +47,7 @@ export const UserProvider = (props) => {
     */
     return (
         <UserContext.Provider value={{
-            user, getUser, addUser, getUserById, updateUser
+            users, getUsers, addUser, getUserById, updateUser
         }}>
             {props.children}
         </UserContext.Provider>

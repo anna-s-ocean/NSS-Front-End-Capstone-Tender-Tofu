@@ -4,6 +4,9 @@ import { Home } from "./Home"
 import { UserProvider } from "./user/UserProvider"
 import { UserList } from "./user/UserList"
 
+import { RestaurantProvider } from "./restaurant/RestaurantProvider"
+import { RestaurantCard } from "./restaurant/RestaurantCard"
+
 export const ApplicationViews = () => {
     return (
         <>
