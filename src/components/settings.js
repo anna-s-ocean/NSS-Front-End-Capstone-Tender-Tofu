@@ -1,0 +1,6 @@
+export const settings = {
+    yelpKey: "VJ1VwXpPjvS9d6SMBSx6DuCeWsTAqeTPPEvASg6WdVJpu6WK4nHsSimvCkn2pbU2kqRFEcs0P4ja3kctm__fedBLrLKclcpBBVKQTr4qwMR-jVFGMdCaT8m7ofYKYHYx"
+    
+};
+
+//VJ1VwXpPjvS9d6SMBSx6DuCeWsTAqeTPPEvASg6WdVJpu6WK4nHsSimvCkn2pbU2kqRFEcs0P4ja3kctm__fedBLrLKclcpBBVKQTr4qwMR-jVFGMdCaT8m7ofYKYHYx

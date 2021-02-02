@@ -16,9 +16,9 @@ export const RestaurantCard = ({restaurantObj}) => {
         <section className="restaurant">
             <h3 className="restaurant_name"></h3>
             <div className= "restaurant_name">{restaurantObj.name}</div>
-            <div className= "restaurant_image_URL">{restaurantObj.image_url}</div>
+            <div className= "restaurant_image_URL"> <a target="image" href={restaurantObj.image_url}>Picture</a></div>
             <div className= "restaurant_location">{restaurantObj.location.display_address}</div>
-            <div className= "restaurant_url">{restaurantObj.url}</div>
+            <div className= "restaurant_url"> {<a target="_blank" href={restaurantObj.url}>Yelp</a>}</div>
             <div className= "restaurant_price_range">{restaurantObj.price}</div>
             <div className= "restaurant_rating">{restaurantObj.rating}</div>
         </section>

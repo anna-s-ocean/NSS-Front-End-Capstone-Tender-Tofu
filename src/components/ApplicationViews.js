@@ -8,6 +8,7 @@ import { RestaurantProvider } from "./restaurant/RestaurantProvider"
 import { RestaurantCard } from "./restaurant/RestaurantCard"
 import { RestaurantForm } from "./restaurant/RestaurantForm"
 import { MatchesProvider } from "./matches/MatchesProvider"
+import { RestaurantList } from "./restaurant/RestaurantList"
 
 export const ApplicationViews = () => {
     return (
@@ -34,6 +35,14 @@ export const ApplicationViews = () => {
                 </UserProvider>
             </MatchesProvider>
             {/* </RestaurantProvider> */}
+            
+            {/* render the restaurant cards to the DOM  */}
+            <RestaurantProvider>
+                <Route path ="/restaurantSelection">
+                    <RestaurantList/>
+                </Route>
+            </RestaurantProvider>
+
 
         </>
     )

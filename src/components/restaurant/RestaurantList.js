@@ -4,12 +4,10 @@
 
 // use r.js to list out the restaurants
 import React, { useContext, useEffect } from "react"
-import { UserContext } from "./UserProvider"
-// import { UserCard } from "./User"
 import { RestaurantContext } from "./RestaurantProvider"
 import { RestaurantCard } from "./RestaurantCard"
 import { useHistory } from "react-router-dom" 
-import "./User.css"
+
 
 export const RestaurantList = () => {
   // This state changes when  getRestaurant()` is invoked below
