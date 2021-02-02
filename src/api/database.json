@@ -57,6 +57,18 @@
       "friendId": 1,
       "dateTime": "2021-02-10T06:00:00.000Z",
       "id": 5
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-10T06:00:00.000Z",
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-10T06:00:00.000Z",
+      "id": 7
     }
   ]
 }
