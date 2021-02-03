@@ -2,7 +2,7 @@
 //accepted or declined. accepted restaurants are stored in the database.json as new objects
 
 
-// use r.js to list out the restaurants
+// use restaurant.js to list out the restaurants
 import React, { useContext, useEffect } from "react"
 import { RestaurantContext } from "./RestaurantProvider"
 import { RestaurantCard } from "./RestaurantCard"
@@ -23,15 +23,15 @@ export const RestaurantList = () => {
 
   }, [])
 
-
+  
   return (
     <div className= "restaurants">
     {console.log("RestaurantList: Render", restaurants)}
       <h2>Restaurants</h2>
       
       {
-     restaurants.map( r => {
-          return <RestaurantCard key={r.id}  r={r} />
+     restaurants.map( restaurant => {
+          return (<RestaurantCard key={restaurant.id}  restaurant={restaurant} />)
         })
       }
     </div>

@@ -22,7 +22,7 @@
       "userId": 1,
       "restaurantId": 1,
       "restuarantName": "Deep Sea Vegan",
-      "EateryOutingId": 1
+      "eateryOutingId": 1
     }
   ],
   "eateryOuting": [
@@ -69,6 +69,18 @@
       "friendId": 1,
       "dateTime": "2021-02-10T06:00:00.000Z",
       "id": 7
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-02-04T06:00:00.000Z",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-04T06:00:00.000Z",
+      "id": 9
     }
   ]
 }
