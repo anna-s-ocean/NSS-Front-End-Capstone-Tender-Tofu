@@ -1,14 +1,15 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
+
 import { UserProvider } from "./user/UserProvider"
 import { UserList } from "./user/UserList"
 
 import { RestaurantProvider } from "./restaurant/RestaurantProvider"
-import { RestaurantCard } from "./restaurant/RestaurantCard"
 import { RestaurantForm } from "./restaurant/RestaurantForm"
-import { MatchesProvider } from "./matches/MatchesProvider"
 import { RestaurantList } from "./restaurant/RestaurantList"
+
+import { EateryOutingProvider } from "./matches/EateryOutingProvider"
 
 export const ApplicationViews = () => {
     return (
@@ -27,21 +28,23 @@ export const ApplicationViews = () => {
 
             {/* Render the restaurant form when http://localhost:3000/restaurantOuting */}
             {/* <RestaurantProvider> */}
-            <MatchesProvider>
+            <EateryOutingProvider>
                 <UserProvider>
                     <Route path ="/restaurantOuting">
                         <RestaurantForm />
                     </Route>
                 </UserProvider>
-            </MatchesProvider>
+            </EateryOutingProvider>
             {/* </RestaurantProvider> */}
             
             {/* render the restaurant cards to the DOM  */}
-            <RestaurantProvider>
-                <Route path ="/restaurantSelection">
-                    <RestaurantList/>
-                </Route>
-            </RestaurantProvider>
+            <EateryOutingProvider>
+                <RestaurantProvider>
+                    <Route path ="/restaurantSelection">
+                        <RestaurantList/>
+                    </Route>
+                </RestaurantProvider>
+            </EateryOutingProvider>
 
 
         </>

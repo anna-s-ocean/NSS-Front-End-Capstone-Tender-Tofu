@@ -4,7 +4,7 @@ import React, { useState, createContext } from "react"
 export const SingleMatchesContext = createContext()
 
 // This component establishes what data can be used.
-export const MatchesProvider = (props) => {
+export const SingleMatchesProvider = (props) => {
     const [singleMacthes, setSingleMatches] = useState([])
 
     const getSingleMatches = () => {

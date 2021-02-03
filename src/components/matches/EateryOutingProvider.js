@@ -1,11 +1,17 @@
-import React, { useState, createContext } from "react"
+import React, { useState, createContext, useEffect } from "react"
 
 // The context is imported and used by individual components that need data
 export const MatchesContext = createContext()
 
 // This component establishes what data can be used.
-export const MatchesProvider = (props) => {
-    const [macthes, setMatches] = useState([])
+export const EateryOutingProvider = (props) => {
+    let [matches, setMatches] = useState([])
+    let [eateryOutingId, setEateryOutingId] = useState(0)
+
+    useEffect(()=> {
+        console.log("testing!!", eateryOutingId)
+        
+      }, [eateryOutingId])
 
     const getMatches = () => {
         return fetch("http://localhost:8088/eateryOuting")
@@ -22,11 +28,16 @@ export const MatchesProvider = (props) => {
             },
             body: JSON.stringify(matchesObj)
         })
+        .then(res => res.json())
+        .then( (outingObj) => {
+            setEateryOutingId(outingObj.id)})
         .then(getMatches)
+        
     }
 
     const getMatchesById = (id) => {
         return fetch(`http://localhost:8088/eateryOuting/${id}`)
+
             .then(res => res.json())
     }
     const updateMatches= match => {
@@ -47,7 +58,7 @@ export const MatchesProvider = (props) => {
     */
     return (
         <MatchesContext.Provider value={{
-            macthes, getMatches, addEateryOuting, getMatchesById, updateMatches
+            matches, getMatches, addEateryOuting, getMatchesById, updateMatches, eateryOutingId
         }}>
             {props.children}
         </MatchesContext.Provider>
