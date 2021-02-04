@@ -10,6 +10,7 @@ import { RestaurantForm } from "./restaurant/RestaurantForm"
 import { RestaurantList } from "./restaurant/RestaurantList"
 
 import { EateryOutingProvider } from "./matches/EateryOutingProvider"
+import { SingleMatchesProvider } from "./matches/SingleMatchProvider"
 
 export const ApplicationViews = () => {
     return (
@@ -28,18 +29,20 @@ export const ApplicationViews = () => {
 
             {/* Render the restaurant form when http://localhost:3000/restaurantOuting */}
             {/* can only have one eateryOutingProvider because of state errors */}
-            <EateryOutingProvider>
-                <UserProvider>
-                    <RestaurantProvider>
-                        <Route path ="/restaurantOuting">
-                            <RestaurantForm />
-                        </Route>
-                        <Route path ="/restaurantSelection">
-                            <RestaurantList/>
-                        </Route>
-                    </RestaurantProvider>
-                </UserProvider>
-            </EateryOutingProvider>
+            <SingleMatchesProvider>
+                <EateryOutingProvider>
+                    <UserProvider>
+                        <RestaurantProvider>
+                            <Route path ="/restaurantOuting">
+                                <RestaurantForm />
+                            </Route>
+                            <Route path ="/restaurantSelection">
+                                <RestaurantList/>
+                            </Route>
+                        </RestaurantProvider>
+                    </UserProvider>
+                </EateryOutingProvider>
+            </SingleMatchesProvider>
         </>
     )
 }

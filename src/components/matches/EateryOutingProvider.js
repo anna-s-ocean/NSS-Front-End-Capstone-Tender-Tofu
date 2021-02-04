@@ -10,14 +10,14 @@ export const EateryOutingProvider = (props) => {
 
 
     const getMatches = () => {
-        return fetch("http://localhost:8088/eateryOuting")
+        return fetch("http://localhost:8088/eateryOutings")
         .then(res =>  res.json())
         .then((data) => setMatches(data))
     }
     
 
     const addEateryOuting = matchesObj => {
-        return fetch("http://localhost:8088/eateryOuting", {
+        return fetch("http://localhost:8088/eateryOutings", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -32,12 +32,12 @@ export const EateryOutingProvider = (props) => {
     }
 
     const getMatchesById = (id) => {
-        return fetch(`http://localhost:8088/eateryOuting/${id}`)
+        return fetch(`http://localhost:8088/eateryOutings/${id}`)
             .then(res => res.json())
     }
 
     const updateMatches= match => {
-        return fetch(`http://localhost:8088/eateryOuting/${match.id}`, {
+        return fetch(`http://localhost:8088/eateryOutings/${match.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"

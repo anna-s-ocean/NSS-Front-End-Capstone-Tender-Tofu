@@ -9,8 +9,8 @@ import React, { useState }from "react"
 import { Link } from "react-router-dom"
 import "./Restaurant.css"
 
-// need to send restaurant.id and restaurant.name along with the click on accept button
-export const RestaurantCard = ({restaurant}) => {
+
+export const RestaurantCard = ({restaurant, handleClickAcceptRestaurant}) => {
     
     return (
         <section className="restaurant">
@@ -21,7 +21,7 @@ export const RestaurantCard = ({restaurant}) => {
             <div className= "restaurant_url"> {<a target="_blank" href={restaurant.url}>Yelp</a>}</div>
             <div className= "restaurant_price_range">Price {restaurant.price}</div>
             <div className= "restaurant_rating">Rating {restaurant.rating}</div>
-            <button id='restaurant_accept_BTN_${restaurant.id}'onClick={() => {}}>Accept</button>
+            <button id= "restaurant_accept_BTN" onClick={() => {handleClickAcceptRestaurant(restaurant)}}> Accept</button>
             <button onClick={() => {}}>Decline</button>
         </section>
     )

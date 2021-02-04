@@ -16,16 +16,23 @@
       "id": 3
     }
   ],
-  "singleUserRestaurantMatch": [
+  "singleUserRestaurantMatches": [
     {
       "id": 1,
       "userId": 1,
       "restaurantId": 1,
       "restaurantName": "Deep Sea Vegan",
       "eateryOutingId": 1
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 7,
+      "id": 2
     }
   ],
-  "eateryOuting": [
+  "eateryOutings": [
     {
       "id": 1,
       "userId": 1,
@@ -63,7 +70,12 @@
       "friendId": 1,
       "dateTime": "2021-02-10T06:00:00.000Z",
       "id": 6
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-02-18T06:00:00.000Z",
+      "id": 7
     }
-    
   ]
 }
