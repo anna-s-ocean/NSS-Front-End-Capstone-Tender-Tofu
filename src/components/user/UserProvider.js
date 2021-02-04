@@ -10,7 +10,6 @@ export const UserProvider = (props) => {
     const getUsers = () => {
         return fetch("http://localhost:8088/users")
         .then(res => res.json())
-        // .then(console.log())
         .then(setUsers)
     }
 
@@ -40,10 +39,8 @@ export const UserProvider = (props) => {
           .then(getUsers)
       }
     /*
-        You return a context provider which has the
-        `user` state, `getUser` function,
-        and the `addUser` function as keys. This
-        allows any child elements to access them.
+         Return a context provider which has the `user` state, `getUser` function,
+        and the `addUser` function as keys. This allows any child elements to access them.
     */
     return (
         <UserContext.Provider value={{

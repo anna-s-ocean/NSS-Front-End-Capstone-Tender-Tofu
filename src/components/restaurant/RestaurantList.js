@@ -11,52 +11,52 @@ import { MatchesContext } from "../matches/EateryOutingProvider"
 
 
 export const RestaurantList = () => {
-  // This state changes when  getRestaurant()` is invoked below
+  // This state changes when  getRestaurant() is invoked below
   const { restaurants, getRestaurants } = useContext(RestaurantContext)
-  const { eateryOutingId } = useContext(MatchesContext)
-
-  const {outingId} = useParams()
+  const { matches, getMatches, eateryOutingId  } = useContext(MatchesContext)
   
   const history = useHistory()
-  //useEffect - reach out to the world for something
-  useEffect(() => {
-    
-    // console.log("RestaurantList: useEffect - getRestaurant")
-    console.log("useEffect", outingId)
+  
+  useEffect(()=>{
     getRestaurants()
-    
+    getMatches()
   }, [])
   
   useEffect(()=> {
-    console.log(eateryOutingId)
+    console.log("update the State", eateryOutingId)
     
   }, [eateryOutingId])
 
   const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
 
-  //create inex and +=
-  // need to automatically set eateryOutingId
-  const [singleMacthes, setSingleMacthes] = useState({
+  
+  // need to automatically set eateryOutingId and current User
+  const [singleMatches, setSingleMatches] = useState({
       userId: currentUserId,
       restaurantId: 0,
       restaurantName: "",
       eateryOutingId: eateryOutingId
     });
 
-  // const handleClickAcceptRestaurant = (event) => {
-  //     event.preventDefault()
-  //     //gaurd to ensure yes btn was selected
-  //     //in if statement push restaurantId and restaurantName to "singleUserRestuarantMatch"
-  //     //display next restaurant
-  //     if (id.includes("accept_BTN")) {
+    //extract the id and name of the restaurant
+    //update the single matches state with this information
+    //send new state to the database
+    //push to the next display of a restaurant
+    //do I need a function to do nothing is the decline button is pressed
+  const handleClickAcceptRestaurant = (event) => {
+      event.preventDefault()
+      //gaurd to ensure yes btn was selected
+      //in if statement push restaurantId and restaurantName to "singleUserRestuarantMatch"
+      //display next restaurant
+      if (id.includes("accept_BTN")) {
         
-  //     } else {
-  //       //invoke addEateryOuting passing restaurant as an argument.
-  //       //once complete, change the url and display the animal list
-  //       addSingleMatch(singleMacthes)
-  //       .then(() => history.push("/restaurantSelection")) //what needs to be displayed
-  //     }
-  //   }
+      } else {
+        //invoke addEateryOuting passing restaurant as an argument.
+        //once complete, change the url and display the animal list
+        addSingleMatch(singleMacthes)
+        .then(() => history.push("/restaurantSelection")) //what needs to be displayed
+      }
+    }
 
 
   //no loop bc not shown all at once

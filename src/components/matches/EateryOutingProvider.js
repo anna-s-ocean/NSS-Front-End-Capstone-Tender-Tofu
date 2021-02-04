@@ -8,17 +8,13 @@ export const EateryOutingProvider = (props) => {
     let [matches, setMatches] = useState([])
     let [eateryOutingId, setEateryOutingId] = useState(0)
 
-    useEffect(()=> {
-        console.log("testing!!", eateryOutingId)
-        
-      }, [eateryOutingId])
 
     const getMatches = () => {
         return fetch("http://localhost:8088/eateryOuting")
-        .then(res => res.json())
-        .then(console.log())
-        .then(setMatches)
+        .then(res =>  res.json())
+        .then((data) => setMatches(data))
     }
+    
 
     const addEateryOuting = matchesObj => {
         return fetch("http://localhost:8088/eateryOuting", {
@@ -31,15 +27,15 @@ export const EateryOutingProvider = (props) => {
         .then(res => res.json())
         .then( (outingObj) => {
             setEateryOutingId(outingObj.id)})
-        .then(getMatches)
-        
+        .then(console.log())
+        .then(getMatches)  
     }
 
     const getMatchesById = (id) => {
         return fetch(`http://localhost:8088/eateryOuting/${id}`)
-
             .then(res => res.json())
     }
+
     const updateMatches= match => {
         return fetch(`http://localhost:8088/eateryOuting/${match.id}`, {
           method: "PUT",
@@ -51,10 +47,8 @@ export const EateryOutingProvider = (props) => {
           .then(getMatches)
       }
     /*
-        You return a context provider which has the
-        `match` state, `getUser` function,
-        and the `addEateryOuting` function as keys. This
-        allows any child elements to access them.
+         Return a context provider which has the `match` state, `getMatches` function,
+        and the `addEateryOuting` function as keys. This allows any child elements to access them.
     */
     return (
         <MatchesContext.Provider value={{

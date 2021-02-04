@@ -27,26 +27,19 @@ export const ApplicationViews = () => {
             </UserProvider>
 
             {/* Render the restaurant form when http://localhost:3000/restaurantOuting */}
-            {/* <RestaurantProvider> */}
+            {/* can only have one eateryOutingProvider because of state errors */}
             <EateryOutingProvider>
                 <UserProvider>
-                    <Route path ="/restaurantOuting">
-                        <RestaurantForm />
-                    </Route>
+                    <RestaurantProvider>
+                        <Route path ="/restaurantOuting">
+                            <RestaurantForm />
+                        </Route>
+                        <Route path ="/restaurantSelection">
+                            <RestaurantList/>
+                        </Route>
+                    </RestaurantProvider>
                 </UserProvider>
             </EateryOutingProvider>
-            {/* </RestaurantProvider> */}
-            
-            {/* render the restaurant cards to the DOM  */}
-            <EateryOutingProvider>
-                <RestaurantProvider>
-                    <Route path ="/restaurantSelection">
-                        <RestaurantList/>
-                    </Route>
-                </RestaurantProvider>
-            </EateryOutingProvider>
-
-
         </>
     )
 }
