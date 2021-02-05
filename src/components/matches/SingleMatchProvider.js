@@ -10,7 +10,6 @@ export const SingleMatchesProvider = (props) => {
     const getSingleMatches = () => {
         return fetch("http://localhost:8088/singleUserRestaurantMatches")
         .then(res => res.json())
-        .then(console.log())
         .then(setSingleMatches)
     }
     const addSingleMatch = matchesObj => {

@@ -25,6 +25,7 @@ export const RestaurantProvider = (props) => {
      .then(parsedRestaurants => {
          setRestaurants(parsedRestaurants.businesses)
      })
+     
     }
 
      return (

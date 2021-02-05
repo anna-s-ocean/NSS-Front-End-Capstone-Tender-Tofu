@@ -30,6 +30,153 @@
       "userId": 2,
       "eateryOutingId": 7,
       "id": 2
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 3,
+      "eateryOutingId": 7,
+      "id": 2
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 2,
+      "eateryOutingId": 9,
+      "id": 3
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 2,
+      "eateryOutingId": 9,
+      "id": 4
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 2,
+      "eateryOutingId": 9,
+      "id": 5
+    },
+    {
+      "restaurantId": "8jwsNjvVNJiYN7AnxHdMLA",
+      "restaurantName": "Yeast Nashville",
+      "userId": 2,
+      "eateryOutingId": 9,
+      "id": 6
+    },
+    {
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
+      "restaurantName": "E+ROSE Wellness Bodega at 505",
+      "userId": 2,
+      "eateryOutingId": 9,
+      "id": 7
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 10,
+      "id": 8
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 2,
+      "eateryOutingId": 10,
+      "id": 9
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 1,
+      "eateryOutingId": 10,
+      "id": 9
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 12,
+      "id": 10
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 12,
+      "id": 11
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 13,
+      "id": 12
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 13,
+      "id": 13
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 0,
+      "id": 14
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 0,
+      "id": 15
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 0,
+      "id": 16
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 0,
+      "id": 17
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 0,
+      "id": 18
+    },
+    {
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
+      "restaurantName": "E+ROSE Wellness Bodega at 505",
+      "userId": 2,
+      "eateryOutingId": 0,
+      "id": 19
+    },
+    {
+      "restaurantId": "Yu_tXvUoyOj5SpeDUOZwnQ",
+      "restaurantName": "The BE Hive",
+      "userId": 2,
+      "eateryOutingId": 0,
+      "id": 20
+    },
+    {
+      "restaurantId": "rs2OZH_vIKgW2Zk59OnZ2A",
+      "restaurantName": "Falcon Coffee Bar",
+      "userId": 2,
+      "eateryOutingId": 0,
+      "id": 21
     }
   ],
   "eateryOutings": [
@@ -76,6 +223,42 @@
       "friendId": 3,
       "dateTime": "2021-02-18T06:00:00.000Z",
       "id": 7
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-12T06:00:00.000Z",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-12T06:00:00.000Z",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-17T06:00:00.000Z",
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-02-12T06:00:00.000Z",
+      "id": 12
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 13
     }
   ]
 }

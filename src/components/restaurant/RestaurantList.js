@@ -4,6 +4,7 @@
 
 // use restaurant.js to list out the restaurants
 import React, { useContext, useEffect, useState } from "react"
+import ReactDOM from "react-dom";
 import { RestaurantContext } from "./RestaurantProvider"
 import { RestaurantCard } from "./RestaurantCard"
 import { useHistory, useParams } from "react-router-dom" 
@@ -14,77 +15,91 @@ import { SingleMatchesContext } from "../matches/SingleMatchProvider"
 export const RestaurantList = () => {
   // This state changes when  getRestaurant() is invoked below
   const { restaurants, getRestaurants } = useContext(RestaurantContext)
-  const { matches, getMatches, eateryOutingId  } = useContext(MatchesContext)
+  const { getMatches, eateryOutingId  } = useContext(MatchesContext)
   const { addSingleMatch } = useContext(SingleMatchesContext)
+  const [ restaurantIndex, setRestaurantIndex ] = useState(0)
   
   const history = useHistory()
   
   useEffect(()=>{
     getRestaurants()
     getMatches()
+    console.log("update the State of eatery outings id", eateryOutingId)
+    
   }, [])
   
-  useEffect(()=> {
-    console.log("update the State", eateryOutingId)
-    
-  }, [eateryOutingId])
+  useEffect (()=>{
+    console.log("restaurantIndex update?", restaurantIndex)
+  }, [restaurantIndex])
 
-  const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
-
-  
-  // need to automatically set eateryOutingId and current User
-  // const [singleMatch, setSingleMatch] = useState({
-  //     userId: currentUserId,
-  //     restaurantId: 0,
-  //     restaurantName: "",
-  //     eateryOutingId: eateryOutingId
-  //   });
+    const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
 
     //extract the id and name of the restaurant
-    //update the single matches state with this information
-    //send new state to the database
+    //update the single matches in database with this information
     //push to the next display of a restaurant
-    //do I need a function to do nothing is the decline button is pressed ANswer: show the next restaurant
-    
-  const handleClickAcceptRestaurant = ( {id, name}) => {
-      
-      //gaurd to ensure yes btn was selected
+    const handleClickAcceptRestaurant = ( {id, name}) => {
       //in if statement push restaurantId and restaurantName to "singleUserRestuarantMatch"
-      //display next restaurant
-      if (id != "" && name != "") {
+      if (id !== "" && name !== "") {
         //assign both values
-        let singleMatch = {
+         let singleMatch = {
           restaurantId: id,
           restaurantName: name,
           userId: currentUserId,
           eateryOutingId: eateryOutingId
         }
-        //display the next restaurant seclection from where the user left off
-        // .then(() => )
         
-      
-        //once complete, change the url and display the animal list
+        //once database is updated, change the url and display the next restaurant
+        //check that single match has values if statement
         addSingleMatch(singleMatch)
-        .then(() => history.push("/restaurantSelection")) //what needs to be displayed
+          .then(() => {
+            let taco = restaurantIndex +1
+            setRestaurantIndex(taco)})
+          .then(displayNext)
+        //.then(() => history.push("/restaurantSelection")) 
+        //display the next restaurant seclection from where the user left off
       }
     }
 
-
-  //no loop bc not shown all at once
-  //display one
-  //knows when button is clicked
-  //displays next 
+    //do I need a function to do nothing is the decline button is pressed Answer: show the next restaurant
+    
+    const handleClickDeclineRestaurant = () => {
+      let taco = restaurantIndex + 1
+      setRestaurantIndex(taco)
+      displayNext()
+    }
+    
+    //function to display one restaurant at a time (not a loop, but uses an index)
+    //when either accept or delete button is clicked information function is called to show next
+    
+    const displayNext = ( ) =>{
+      //place one restaurant into RestaurantCard
+      //how to iternate over the 
+      if(restaurants.length > restaurantIndex){
+        return(
+        <RestaurantCard restaurant={restaurants[restaurantIndex]} handleClickAcceptRestaurant={handleClickAcceptRestaurant} handleClickDeclineRestaurant ={handleClickDeclineRestaurant}/>)
+        
+      }
+      // else add field for displaying a message saying you have run out of restaurants 
+      // else {
+      //   window.alert("I guess you didn't want to go to dinner 🤷")
+      // }
+  }
+   
+  
   
   return (
     <div className= "restaurants">
-    {/* {console.log("RestaurantList: Render", restaurants)} */}
+
       <h2>Restaurants</h2>
-      
-      {
+      {/* {
      restaurants.map( restaurant => {
           return (<RestaurantCard key={restaurant.id}  restaurant={restaurant} handleClickAcceptRestaurant={handleClickAcceptRestaurant}/>)
         })
-      }
+      } */}
+     { displayNext() }
+          
+     {/* key={restaurants.id}, handleClickAcceptRestaurant={handleClickAcceptRestaurant} handleClickDeclineRestaurant ={handleClickDeclineRestaurant} */}
+      
     </div>
   )
 }

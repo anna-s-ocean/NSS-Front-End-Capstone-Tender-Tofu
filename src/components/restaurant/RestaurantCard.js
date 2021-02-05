@@ -2,7 +2,6 @@
 //info about the restaurant is displayed 
 
 //TODO:
-//handleClickAcceptRestaurant
 //update with yelp rating system visuals 
 
 import React, { useState }from "react"
@@ -10,7 +9,7 @@ import { Link } from "react-router-dom"
 import "./Restaurant.css"
 
 
-export const RestaurantCard = ({restaurant, handleClickAcceptRestaurant}) => {
+export const RestaurantCard = ({restaurant, handleClickAcceptRestaurant, handleClickDeclineRestaurant}) => {
     
     return (
         <section className="restaurant">
@@ -22,7 +21,7 @@ export const RestaurantCard = ({restaurant, handleClickAcceptRestaurant}) => {
             <div className= "restaurant_price_range">Price {restaurant.price}</div>
             <div className= "restaurant_rating">Rating {restaurant.rating}</div>
             <button id= "restaurant_accept_BTN" onClick={() => {handleClickAcceptRestaurant(restaurant)}}> Accept</button>
-            <button onClick={() => {}}>Decline</button>
+            <button onClick={handleClickDeclineRestaurant}>Decline</button>
         </section>
     )
 
