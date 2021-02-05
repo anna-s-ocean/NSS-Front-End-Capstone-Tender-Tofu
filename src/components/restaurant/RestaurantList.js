@@ -1,8 +1,6 @@
 //display the restaurant data in a card that can be 
 //accepted or declined. accepted restaurants are stored in the database.json as new objects
 
-
-// use restaurant.js to list out the restaurants
 import React, { useContext, useEffect, useState } from "react"
 import ReactDOM from "react-dom";
 import { RestaurantContext } from "./RestaurantProvider"
@@ -70,7 +68,6 @@ export const RestaurantList = () => {
     
     //function to display one restaurant at a time (not a loop, but uses an index)
     //when either accept or delete button is clicked information function is called to show next
-    
     const displayNext = ( ) =>{
       //place one restaurant into RestaurantCard
       //how to iternate over the 
@@ -90,16 +87,9 @@ export const RestaurantList = () => {
   return (
     <div className= "restaurants">
 
-      <h2>Restaurants</h2>
-      {/* {
-     restaurants.map( restaurant => {
-          return (<RestaurantCard key={restaurant.id}  restaurant={restaurant} handleClickAcceptRestaurant={handleClickAcceptRestaurant}/>)
-        })
-      } */}
-     { displayNext() }
-          
-     {/* key={restaurants.id}, handleClickAcceptRestaurant={handleClickAcceptRestaurant} handleClickDeclineRestaurant ={handleClickDeclineRestaurant} */}
-      
+      <h2>Restaurants</h2>   
+     { displayNext() }   
+
     </div>
   )
 }

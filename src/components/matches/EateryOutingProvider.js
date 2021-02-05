@@ -31,11 +31,15 @@ export const EateryOutingProvider = (props) => {
         .then(getMatches)  
     }
 
-    const getMatchesById = (id) => {
+    const getEateryOutingById = (id) => {
         return fetch(`http://localhost:8088/eateryOutings/${id}`)
             .then(res => res.json())
     }
 
+    const getEateryOutingByFriendId = (id) => {
+        return fetch (`http://localhost:8088/eateryOutings?friendId=${id}`)
+            .then(res => res.json())
+    }
     const updateMatches= match => {
         return fetch(`http://localhost:8088/eateryOutings/${match.id}`, {
           method: "PUT",
@@ -52,7 +56,7 @@ export const EateryOutingProvider = (props) => {
     */
     return (
         <MatchesContext.Provider value={{
-            matches, getMatches, addEateryOuting, getMatchesById, updateMatches, eateryOutingId
+            matches, getMatches, addEateryOuting, getEateryOutingById, updateMatches, eateryOutingId, getEateryOutingByFriendId
         }}>
             {props.children}
         </MatchesContext.Provider>

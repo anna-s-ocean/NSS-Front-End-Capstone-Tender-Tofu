@@ -195,8 +195,8 @@
       "id": 2
     },
     {
-      "userId": 2,
-      "friendId": 1,
+      "userId": 1,
+      "friendId": 2,
       "dateTime": "2021-02-22T06:00:00.000Z",
       "id": 3
     },
@@ -213,8 +213,8 @@
       "id": 5
     },
     {
-      "userId": 2,
-      "friendId": 1,
+      "userId": 3,
+      "friendId": 2,
       "dateTime": "2021-02-10T06:00:00.000Z",
       "id": 6
     },
