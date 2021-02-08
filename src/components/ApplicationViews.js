@@ -1,13 +1,17 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
+
 import { UserProvider } from "./user/UserProvider"
 import { UserList } from "./user/UserList"
 
 import { RestaurantProvider } from "./restaurant/RestaurantProvider"
-import { RestaurantCard } from "./restaurant/RestaurantCard"
 import { RestaurantForm } from "./restaurant/RestaurantForm"
-import { MatchesProvider } from "./matches/MatchesProvider"
+import { RestaurantList } from "./restaurant/RestaurantList"
+
+import { EateryOutingProvider } from "./matches/EateryOutingProvider"
+import { SingleMatchesProvider } from "./matches/SingleMatchProvider"
+import { EateryOutingSelectList } from "./matches/EateryOutingSelectList"
 
 export const ApplicationViews = () => {
     return (
@@ -24,17 +28,28 @@ export const ApplicationViews = () => {
                 </Route>
             </UserProvider>
 
-            {/* Render the restaurant form when http://localhost:3000/restaurantOuting */}
-            {/* <RestaurantProvider> */}
-            <MatchesProvider>
-                <UserProvider>
-                    <Route path ="/restaurantOuting">
-                        <RestaurantForm />
-                    </Route>
-                </UserProvider>
-            </MatchesProvider>
-            {/* </RestaurantProvider> */}
+            <EateryOutingProvider>
+                <Route exact path="/halfwayFilledOutEateryFormNowFriendSelects">
+                    <EateryOutingSelectList />
+                </Route>
+            </EateryOutingProvider>
 
+            {/* Render the restaurant form when http://localhost:3000/restaurantOuting */}
+            {/* can only have one eateryOutingProvider because of state errors */}
+            <SingleMatchesProvider>
+                <EateryOutingProvider>
+                    <UserProvider>
+                        <RestaurantProvider>
+                            <Route path ="/restaurantOuting">
+                                <RestaurantForm />
+                            </Route>
+                            <Route path ="/restaurantSelection">
+                                <RestaurantList/>
+                            </Route>
+                        </RestaurantProvider>
+                    </UserProvider>
+                </EateryOutingProvider>
+            </SingleMatchesProvider>
         </>
     )
 }

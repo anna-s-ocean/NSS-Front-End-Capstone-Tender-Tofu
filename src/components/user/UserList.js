@@ -10,7 +10,7 @@ export const UserList = () => {
   const { users, getUsers } = useContext(UserContext)
 
 
-  const history = useHistory()
+  // const history = useHistory()
   //useEffect - reach out to the world for something
   useEffect(() => {
     
