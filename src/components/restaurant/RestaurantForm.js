@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react"
 import { UserList } from "../user/UserList"
 import { UserContext } from "../user/UserProvider"
 import { RestaurantContext } from "./RestaurantProvider"
-import { MatchesContext } from "../matches/MatchesProvider"
+import { MatchesContext } from "../matches/EateryOutingProvider"
 import { useHistory, useParams } from 'react-router-dom';
 import  { Calendar } from 'react-calendar'
 
@@ -55,7 +55,6 @@ export const RestaurantForm = () => {
         /* When changing a state object or array,
         always create a copy, make changes, and then set state.*/
         const newRestaurant = { ...restaurant }
-        debugger;
         if (typeof event.getMonth === 'function'){
           newRestaurant.dateTime = event
         }else {
@@ -85,7 +84,7 @@ export const RestaurantForm = () => {
         //invoke addEateryOuting passing restaurant as an argument.
         //once complete, change the url and display the animal list
         addEateryOuting(restaurant)
-        .then(() => history.push("/")) //what needs to be displayed
+        .then(() => history.push("/restaurantSelection")) 
       }
     }
 

@@ -1,29 +1,20 @@
-// let parks = []
 
-// export const useParks = () => {
-//   return parks.slice()
-// }
+import React, { useState, createContext } from "react"
+import { settings } from "../settings.js";
 
-// //"http://localhost:8088/data"
-
-// export const getParks = () => {
-//   return fetch("https://developer.nps.gov/api/v1/parks?limit=498&api_key=LQQm52ab9VPeOewpPtjcSGpReo200bsyBXFC0H33")
-//   .then(response => response.json())
-//   .then(
-//     parsedParks => {
-//       parks = parsedParks.data
-//     }
-//   )
-// }
-
- var token = 'Bearer VJ1VwXpPjvS9d6SMBSx6DuCeWsTAqeTPPEvASg6WdVJpu6WK4nHsSimvCkn2pbU2kqRFEcs0P4ja3kctm__fedBLrLKclcpBBVKQTr4qwMR-jVFGMdCaT8m7ofYKYHYx'
+const yelpKey = settings.yelpKey;
+ var token = `Bearer ${yelpKey}`
  var yelp_search_url = 'https://api.yelp.com/v3/businesses/search'
  var cors_anywhere_url ='https://cors-anywhere.herokuapp.com'
- let restaurant = []
+ var nss_cors_work_around = 'https://nss-cors.herokuapp.com/'
+//  cors_anywhere_url + '/' +
+ export const RestaurantContext = createContext()
 
-export const RestaurantProvider = () => {
+export const RestaurantProvider = (props) => {
+    let [restaurants, setRestaurants] = useState([])
 
-    return  fetch(cors_anywhere_url + '/' + yelp_search_url + '?term=vegan&latitude=36.174465&longitude=-86.767960',
+     const getRestaurants = () => {
+        return  fetch( nss_cors_work_around + yelp_search_url + '?term=vegan&latitude=36.174465&longitude=-86.767960',
          {method: 'GET',
          headers: {
              'Authorization': token 
@@ -32,8 +23,17 @@ export const RestaurantProvider = () => {
 
      ).then(res => res.json())
      .then(parsedRestaurants => {
-         restaurant = parsedRestaurants.data
+         setRestaurants(parsedRestaurants.businesses)
      })
-     .then(console.log)
+     
+    }
+
+     return (
+        <RestaurantContext.Provider value={{
+            restaurants, getRestaurants
+        }}>
+            {props.children}
+        </RestaurantContext.Provider>
+    )
 }
 
