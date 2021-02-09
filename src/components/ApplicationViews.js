@@ -28,11 +28,6 @@ export const ApplicationViews = () => {
                 </Route>
             </UserProvider>
 
-            <EateryOutingProvider>
-                <Route exact path="/halfwayFilledOutEateryFormNowFriendSelects">
-                    <EateryOutingSelectList />
-                </Route>
-            </EateryOutingProvider>
 
             {/* Render the restaurant form when http://localhost:3000/restaurantOuting */}
             {/* can only have one eateryOutingProvider because of state errors */}
@@ -43,8 +38,14 @@ export const ApplicationViews = () => {
                             <Route path ="/restaurantOuting">
                                 <RestaurantForm />
                             </Route>
-                            <Route path ="/restaurantSelection">
+                            <Route exact path ="/restaurantSelection">
                                 <RestaurantList/>
+                            </Route>
+                            <Route exact path ="/restaurantSelection/:eateryOutingFromParamsId(\d+)">
+                                <RestaurantList/>
+                            </Route>
+                            <Route exact path="/halfwayFilledOutEateryFormNowFriendSelects">
+                                <EateryOutingSelectList />
                             </Route>
                         </RestaurantProvider>
                     </UserProvider>

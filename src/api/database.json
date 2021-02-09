@@ -127,56 +127,122 @@
       "restaurantName": "The Wild Cow",
       "userId": 2,
       "eateryOutingId": 0,
-      "id": 14
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 15
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 16
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 0,
       "id": 17
     },
     {
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
       "restaurantName": "The Wild Cow",
       "userId": 2,
-      "eateryOutingId": 0,
-      "id": 18
+      "id": 22
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "id": 23
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "id": 24
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "id": 25
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "id": 26
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "id": 27
     },
     {
       "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
       "restaurantName": "E+ROSE Wellness Bodega at 505",
       "userId": 2,
-      "eateryOutingId": 0,
-      "id": 19
+      "id": 28
     },
     {
-      "restaurantId": "Yu_tXvUoyOj5SpeDUOZwnQ",
-      "restaurantName": "The BE Hive",
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
       "userId": 2,
-      "eateryOutingId": 0,
-      "id": 20
+      "id": 29
     },
     {
-      "restaurantId": "rs2OZH_vIKgW2Zk59OnZ2A",
-      "restaurantName": "Falcon Coffee Bar",
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
       "userId": 2,
-      "eateryOutingId": 0,
-      "id": 21
+      "id": 30
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 14,
+      "id": 31
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "eateryOutingId": 14,
+      "id": 32
+    },
+    {
+      "restaurantId": "SORfr76--4UporsAlVrtbw",
+      "restaurantName": "Deep Sea Vegan",
+      "userId": 2,
+      "eateryOutingId": 14,
+      "id": 33
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 14,
+      "id": 34
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "id": 35
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "id": 36
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 16,
+      "id": 37
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "eateryOutingId": 16,
+      "id": 38
+    },
+    {
+      "restaurantId": "SORfr76--4UporsAlVrtbw",
+      "restaurantName": "Deep Sea Vegan",
+      "userId": 2,
+      "eateryOutingId": 16,
+      "id": 39
     }
   ],
   "eateryOutings": [
@@ -259,6 +325,30 @@
       "friendId": 1,
       "dateTime": "2021-02-11T06:00:00.000Z",
       "id": 13
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-02-04T06:00:00.000Z",
+      "id": 14
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-09T06:00:00.000Z",
+      "id": 15
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 16
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 17
     }
   ]
 }

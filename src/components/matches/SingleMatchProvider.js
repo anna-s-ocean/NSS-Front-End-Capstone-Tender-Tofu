@@ -12,6 +12,9 @@ export const SingleMatchesProvider = (props) => {
         .then(res => res.json())
         .then(setSingleMatches)
     }
+    const getSingleMatchesByEateryOutingId = () => {
+        //run a filter of use params value being the same at eatery outing id in databse
+    }
     const addSingleMatch = matchesObj => {
         return fetch("http://localhost:8088/singleUserRestaurantMatches", {
             method: "POST",
