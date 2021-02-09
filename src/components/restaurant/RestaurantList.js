@@ -21,7 +21,7 @@ export const RestaurantList = () => {
   const { getMatches, getEateryOutingById, eateryOutingId  } = useContext(MatchesContext)
   const { addSingleMatch } = useContext(SingleMatchesContext)
   const [ restaurantIndex, setRestaurantIndex ] = useState(0)
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true); //the purpose of this code?
   const {eateryOutingFromParamsId} = useParams();
   const history = useHistory()
   
@@ -68,7 +68,7 @@ export const RestaurantList = () => {
           .then(displayNext) //display the next restaurant seclection from where the user left off
 
           //display is rendering twice meeting both conditions
-      }else if(eateryOutingFromParamsId === undefined){
+      }else if(eateryOutingFromParamsId){
         let singleMatch = {
           restaurantId: id,
           restaurantName: name,
