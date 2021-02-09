@@ -50,13 +50,30 @@ export const EateryOutingProvider = (props) => {
         })
           .then(getMatches)
       }
+      //update the eatery outing with patch 
+      
+
+      const updateEateryOuting = (id, restaurantId, restaurantName) => {
+          return fetch(`http://localhost:8088/eateryOutings/${id}`, {
+              method: "PATCH",
+              headers: {
+                "Content-Type": "application/json"
+            },
+              body: JSON.stringify({
+                  restaurantId: restaurantId,
+                  restaurantName: restaurantName
+              })  
+          })
+          .then( res => res.json())
+          .then( json => console.log(json))
+      }
     /*
          Return a context provider which has the `match` state, `getMatches` function,
         and the `addEateryOuting` function as keys. This allows any child elements to access them.
     */
     return (
         <MatchesContext.Provider value={{
-            matches, getMatches, addEateryOuting, getEateryOutingById, updateMatches, eateryOutingId, getEateryOutingByFriendId
+            matches, getMatches, addEateryOuting, getEateryOutingById, updateMatches, eateryOutingId, getEateryOutingByFriendId, updateEateryOuting
         }}>
             {props.children}
         </MatchesContext.Provider>

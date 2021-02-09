@@ -12,12 +12,13 @@ import { useInterval } from "../matches/PollingUseInterval"
 export const RestaurantList = () => {
   // This state changes when  getRestaurant() is invoked below
   const { restaurants, getRestaurants } = useContext(RestaurantContext)
-  const { getMatches, getEateryOutingById, eateryOutingId  } = useContext(MatchesContext)
+  const { getMatches, getEateryOutingById, eateryOutingId , updateEateryOuting  } = useContext(MatchesContext)
   const { addSingleMatch, getSingleMatchesByEateryOutingId } = useContext(SingleMatchesContext)
   const [ restaurantIndex, setRestaurantIndex ] = useState(0)
   const {eateryOutingFromParamsId} = useParams();
   const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
   const MATCH_REFRESH_INTERVAL = 7000; //time delay in milliseconds 
+  // const [eateryOutingByIdObject, setEateryOutingByIdObject] = useState[{}]
   const [isLoading, setIsLoading] = useState(true); //the purpose of this code?
   const history = useHistory()
   
@@ -98,15 +99,32 @@ export const RestaurantList = () => {
    //filter to determine if a restaurant id is on the same list twice
    useInterval(  () => {
     console.log("Checking for matching restaurantId in singleUserRestaurantMatches with the same eateryOuting Id")
+    //getEateryOutingById returns a promise soooo chain a dot then ..
+    //update matches
+    // let eateryOutingObject = []
+    // getEateryOutingById(eateryOutingFromParamsId)
+    // .then(res => console.log(res))
+    // .then(res => setEateryOutingByIdObject(res))
+    // .then((res) => res = eateryOutingObject)
+
+
     getSingleMatchesByEateryOutingId(parseInt(eateryOutingFromParamsId))
     .then(res => {
       console.log("first console of res" ,res)
       res.sort(compare)
       console.log("second console of res" ,res)
-      for( let i= 0;  i < res.length; i++){
-        if(res[i] === res[i+ 1]){
-          //this is the match 
-          //update the eateryOutings database with restaurantId and restaurantName
+      for( let i= 0;  i < res.length -1 ; i++){
+         
+        if(res[i].restaurantId === res[i+ 1].restaurantId){ //this is the match
+          let id = eateryOutingFromParamsId
+          let restaurantName = res[i].restaurantName
+          let restaurantId = res[i].restaurantId
+          updateEateryOuting(id, restaurantName , restaurantId )
+          .then(window.alert("a match has been found " + res[i].restaurantName))
+          
+          return
+          // eateryOutingObject[restaurantId] = res[i].restaurantId   //update the eateryOutings database with restaurantId and restaurantName
+          // eateryOutingObject[restaurantName] = res[i].restaurantName
           //call the function to display match (not written yet)
         }
       }

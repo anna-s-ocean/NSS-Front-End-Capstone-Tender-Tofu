@@ -39,48 +39,6 @@
       "id": 2
     },
     {
-      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
-      "restaurantName": "The Southern V",
-      "userId": 2,
-      "eateryOutingId": 9,
-      "id": 3
-    },
-    {
-      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
-      "restaurantName": "Avo",
-      "userId": 2,
-      "eateryOutingId": 9,
-      "id": 4
-    },
-    {
-      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
-      "restaurantName": "Sunflower Cafe",
-      "userId": 2,
-      "eateryOutingId": 9,
-      "id": 5
-    },
-    {
-      "restaurantId": "8jwsNjvVNJiYN7AnxHdMLA",
-      "restaurantName": "Yeast Nashville",
-      "userId": 2,
-      "eateryOutingId": 9,
-      "id": 6
-    },
-    {
-      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
-      "restaurantName": "E+ROSE Wellness Bodega at 505",
-      "userId": 2,
-      "eateryOutingId": 9,
-      "id": 7
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 18,
-      "id": 8
-    },
-    {
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
       "restaurantName": "The Wild Cow",
       "userId": 2,
@@ -139,79 +97,15 @@
       "userId": 3,
       "friendId": 2,
       "dateTime": "2021-02-10T06:00:00.000Z",
-      "id": 6
+      "id": 6,
+      "restaurantId": "The Wild Cow",
+      "restaurantName": "zJmp_J8SUNosLxk6borpFg"
     },
     {
       "userId": 2,
       "friendId": 3,
       "dateTime": "2021-02-18T06:00:00.000Z",
       "id": 7
-    },
-    {
-      "userId": 2,
-      "friendId": 1,
-      "dateTime": "2021-02-12T06:00:00.000Z",
-      "id": 8
-    },
-    {
-      "userId": 2,
-      "friendId": 3,
-      "dateTime": "2021-02-11T06:00:00.000Z",
-      "id": 9
-    },
-    {
-      "userId": 2,
-      "friendId": 1,
-      "dateTime": "2021-02-17T06:00:00.000Z",
-      "id": 10
-    },
-    {
-      "userId": 2,
-      "friendId": 3,
-      "dateTime": "2021-02-06T06:00:00.000Z",
-      "id": 11
-    },
-    {
-      "userId": 2,
-      "friendId": 1,
-      "dateTime": "2021-02-13T06:00:00.000Z",
-      "id": 12
-    },
-    {
-      "userId": 2,
-      "friendId": 1,
-      "dateTime": "2021-02-11T06:00:00.000Z",
-      "id": 13
-    },
-    {
-      "userId": 2,
-      "friendId": 3,
-      "dateTime": "2021-02-10T06:00:00.000Z",
-      "id": 14
-    },
-    {
-      "userId": 2,
-      "friendId": 1,
-      "dateTime": "2021-02-12T06:00:00.000Z",
-      "id": 15
-    },
-    {
-      "userId": 2,
-      "friendId": 3,
-      "dateTime": "2021-02-04T06:00:00.000Z",
-      "id": 16
-    },
-    {
-      "userId": 2,
-      "friendId": 1,
-      "dateTime": "2021-02-20T06:00:00.000Z",
-      "id": 17
-    },
-    {
-      "userId": 2,
-      "friendId": 1,
-      "dateTime": "2021-02-11T06:00:00.000Z",
-      "id": 18
     }
   ]
 }
