@@ -72,6 +72,34 @@
       "userId": 2,
       "eateryOutingId": 9,
       "id": 7
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 18,
+      "id": 8
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 6,
+      "id": 9
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 3,
+      "eateryOutingId": 6,
+      "id": 10
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "eateryOutingId": 6,
+      "id": 11
     }
   ],
   "eateryOutings": [
@@ -130,6 +158,60 @@
       "friendId": 3,
       "dateTime": "2021-02-11T06:00:00.000Z",
       "id": 9
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-17T06:00:00.000Z",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-02-06T06:00:00.000Z",
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-13T06:00:00.000Z",
+      "id": 12
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 13
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-02-10T06:00:00.000Z",
+      "id": 14
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-12T06:00:00.000Z",
+      "id": 15
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-02-04T06:00:00.000Z",
+      "id": 16
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-20T06:00:00.000Z",
+      "id": 17
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 18
     }
   ]
 }

@@ -7,83 +7,57 @@ import { RestaurantCard } from "./RestaurantCard"
 import { useHistory, useParams } from "react-router-dom" 
 import { MatchesContext } from "../matches/EateryOutingProvider"
 import { SingleMatchesContext } from "../matches/SingleMatchProvider"
+import { useInterval } from "../matches/PollingUseInterval"
 
-// TODO:
-// determine if the form is being render for the first time or by the second user
-//if the form is being used for the first time use state
-//if the form is being used for the second time use params
-//weather use state on use params, the eateryOuting id, needs to be updated with current eatery outing
-//need differnt names for usestate and use param variable 
-//
 export const RestaurantList = () => {
   // This state changes when  getRestaurant() is invoked below
   const { restaurants, getRestaurants } = useContext(RestaurantContext)
   const { getMatches, getEateryOutingById, eateryOutingId  } = useContext(MatchesContext)
-  const { addSingleMatch } = useContext(SingleMatchesContext)
+  const { addSingleMatch, getSingleMatchesByEateryOutingId } = useContext(SingleMatchesContext)
   const [ restaurantIndex, setRestaurantIndex ] = useState(0)
-  const [isLoading, setIsLoading] = useState(true); //the purpose of this code?
   const {eateryOutingFromParamsId} = useParams();
+  const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
+  const MATCH_REFRESH_INTERVAL = 7000; //time delay in milliseconds 
+  const [isLoading, setIsLoading] = useState(true); //the purpose of this code?
   const history = useHistory()
   
   useEffect(()=>{
     console.log("use params update the eateryOutingId", eateryOutingFromParamsId)
-    getRestaurants().then(getMatches).then( ()=>{
-      if(eateryOutingId){
-        getEateryOutingById(eateryOutingId)
-        setIsLoading(false)
-      }else{
-        setIsLoading(false)
-      }
-    })
-    console.log("update the State of eatery outings id", eateryOutingId)   
+    getRestaurants()
+    .then(getMatches)
   }, [])
   
-  useEffect (()=>{
+  useEffect (()=>{ //delete after update to show alert when restaurantIndex > restaurant.length 
     console.log("restaurantIndex update?", restaurantIndex)
   }, [restaurantIndex])
 
-    const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
 
     //extract the id and name of the restaurant
     //update the single matches in database with this information
     //push to the next display of a restaurant
     const handleClickAcceptRestaurant = ( {id, name}) => {
-      debugger;
+      
+      //clear up if statement by using Params both times
       //in if statement push restaurantId and restaurantName to "singleUserRestuarantMatch"
-      if (id !== "" && name !== "" && eateryOutingId !== 0) {
+      if (id !== "" && name !== "") {
         //assign all values
          let singleMatch = {
           restaurantId: id,
           restaurantName: name,
           userId: currentUserId,
-          eateryOutingId: eateryOutingId
+          eateryOutingId: parseInt(eateryOutingFromParamsId)
         }
         
         //once database is updated, change the url and display the next restaurant
-        //check that single match has values if statement
         addSingleMatch(singleMatch)
           .then(() => {
             let taco = restaurantIndex +1
             setRestaurantIndex(taco)})
-          .then(displayNext) //display the next restaurant seclection from where the user left off
-
-          //display is rendering twice meeting both conditions
-      }else if(eateryOutingFromParamsId){
-        let singleMatch = {
-          restaurantId: id,
-          restaurantName: name,
-          userId: currentUserId,
-          eateryOutingId: parseInt(eateryOutingFromParamsId) //error with assignment
-        }
-        addSingleMatch(singleMatch)
-          .then(() => {
-            let taco = restaurantIndex +1
-            setRestaurantIndex(taco)})
-          .then(displayNext)
+          .then(displayNext) 
       }
     }
 
-    //do I need a function to do nothing is the decline button is pressed Answer: show the next restaurant
+    //function for decline button
     const handleClickDeclineRestaurant = () => {
       let taco = restaurantIndex + 1
       setRestaurantIndex(taco)
@@ -93,9 +67,7 @@ export const RestaurantList = () => {
     //function to display one restaurant at a time (not a loop, but uses an index)
     //when either accept or delete button is clicked information function is called to show next
     const displayNext = ( ) =>{
-      debugger;
-      //place one restaurant into RestaurantCard
-      //how to iternate over the 
+      
       if(restaurants.length > restaurantIndex){
         return(
         <RestaurantCard restaurant={restaurants[restaurantIndex]} handleClickAcceptRestaurant={handleClickAcceptRestaurant} handleClickDeclineRestaurant ={handleClickDeclineRestaurant}/>)
@@ -106,8 +78,41 @@ export const RestaurantList = () => {
       //   window.alert("I guess you didn't want to go to dinner 🤷")
       // }
   }
-   
+
+  function compare(a, b) {
+    
+    const restA = a.restaurantId;
+    const restB = b.restaurantId;
   
+    let comparison = 0;
+    if (restA > restB) {
+      comparison = 1;
+    } else if (restA < restB) {
+      comparison = -1;
+    }
+    return comparison;
+  }
+  
+  
+   
+   //filter to determine if a restaurant id is on the same list twice
+   useInterval(  () => {
+    console.log("Checking for matching restaurantId in singleUserRestaurantMatches with the same eateryOuting Id")
+    getSingleMatchesByEateryOutingId(parseInt(eateryOutingFromParamsId))
+    .then(res => {
+      console.log("first console of res" ,res)
+      res.sort(compare)
+      console.log("second console of res" ,res)
+      for( let i= 0;  i < res.length; i++){
+        if(res[i] === res[i+ 1]){
+          //this is the match 
+          //update the eateryOutings database with restaurantId and restaurantName
+          //call the function to display match (not written yet)
+        }
+      }
+    })
+   
+}, MATCH_REFRESH_INTERVAL)
   
   return (
     <div className= "restaurants">

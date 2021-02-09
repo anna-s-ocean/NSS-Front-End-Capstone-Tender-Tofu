@@ -27,7 +27,7 @@ export const EateryOutingSelectList = () => {
     const handleClickSelectEateryOuting = (outingId) => {
         // set the state of eateryOutingId
         //display the restaurant select page
-        debugger;
+        
         eateryOutingId = outingId
         // setEateryOutingId(outingId)
         RestaurantList()

@@ -7,12 +7,14 @@ export const SingleMatchesContext = createContext()
 export const SingleMatchesProvider = (props) => {
     const [singleMacthes, setSingleMatches] = useState([])
 
-    const getSingleMatches = () => {
-        return fetch("http://localhost:8088/singleUserRestaurantMatches")
+    // const getSingleMatches = () => {
+    //     return fetch("http://localhost:8088/singleUserRestaurantMatches")
+    //     .then(res => res.json())
+    //     .then(setSingleMatches)
+    // }
+    const getSingleMatchesByEateryOutingId = (eateryOutingId) => {
+        return fetch( `http://localhost:8088/singleUserRestaurantMatches?eateryOutingId=${eateryOutingId}`)
         .then(res => res.json())
-        .then(setSingleMatches)
-    }
-    const getSingleMatchesByEateryOutingId = () => {
         //run a filter of use params value being the same at eatery outing id in databse
     }
     const addSingleMatch = matchesObj => {
@@ -23,12 +25,12 @@ export const SingleMatchesProvider = (props) => {
             },
             body: JSON.stringify(matchesObj)
         })
-        .then(getSingleMatches)
+        // .then(getSingleMatches)
     }
 
     return (
         <SingleMatchesContext.Provider value={{
-            singleMacthes, getSingleMatches, addSingleMatch
+            singleMacthes, addSingleMatch, getSingleMatchesByEateryOutingId
         }}>
             {props.children}
         </SingleMatchesContext.Provider>

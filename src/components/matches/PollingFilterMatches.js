@@ -14,8 +14,9 @@ import { MatchesContext } from "./EateryOutingProvider"
 
 export const PollingFilterMatches = () => {
     const { getMatches, getEateryOutingByFriendId, getEateryOutingById  } = useContext(MatchesContext)
+    //singleUserRestaurantMatch fetch call 
     const {eateryOutingFromParamsId} = useParams();
-    const MATCH_REFRESH_INTERVAL = 1000; //time delay in milliseconds
+    
     //what hooks do I need? to match my code to the example
 
 
@@ -27,11 +28,7 @@ export const PollingFilterMatches = () => {
     //
     let filtedForMatchArray = currentEateryOutingArray.filter( () => {})
 
-    //filter to determine if a restaurant id is on the same list twice
-    useInerval( async () => {
-        console.log("Checking for matching restaurantId in singleUserRestaurantMatches with the same eateryOuting Id")
-        const matches 
-    }, MATCH_REFRESH_INTERVAL)
+   
 
 
 

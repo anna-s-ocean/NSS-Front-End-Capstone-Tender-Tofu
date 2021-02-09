@@ -38,9 +38,9 @@ export const ApplicationViews = () => {
                             <Route path ="/restaurantOuting">
                                 <RestaurantForm />
                             </Route>
-                            <Route exact path ="/restaurantSelection">
+                            {/* <Route exact path ="/restaurantSelection">
                                 <RestaurantList/>
-                            </Route>
+                            </Route> */}
                             <Route exact path ="/restaurantSelection/:eateryOutingFromParamsId(\d+)">
                                 <RestaurantList/>
                             </Route>

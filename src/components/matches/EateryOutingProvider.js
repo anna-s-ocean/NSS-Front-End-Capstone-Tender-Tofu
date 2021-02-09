@@ -26,8 +26,9 @@ export const EateryOutingProvider = (props) => {
         })
         .then(res => res.json())
         .then( (outingObj) => {
-            setEateryOutingId(outingObj.id)})
-        .then(getMatches)  
+            // setEateryOutingId(outingObj.id)})
+            getMatches()
+            return outingObj.id})  
     }
 
     const getEateryOutingById = (id) => {

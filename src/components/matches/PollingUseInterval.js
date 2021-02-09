@@ -8,6 +8,8 @@ import { useEffect , useRef} from "react";
 //eateryOuting object that has the same Id as above
 //in another component create function to display match card
 //in this component route to this display of the match card 
+
+// if delay is null stop interval, use found match has been found
 export const useInterval = (callback, delay) => {
 
     const savedCallback = useRef()

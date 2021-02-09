@@ -8,8 +8,18 @@ import { useHistory, useParams } from "react-router-dom"
 
 export const MatchesList = () => {
 
+    //what needs to be imported?
+
+
+    //what needs to be in the useEffect?
+
+
+    //handleClickDelete function
+    //functions?
+
+    //return statement that includes matchesCard
 
 
 
-    
+
 }
