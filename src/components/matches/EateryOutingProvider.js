@@ -67,7 +67,7 @@ export const EateryOutingProvider = (props) => {
       }
 
       const deleteMatchedEateryOuting = (eateryOutingId) => {
-            return fetch(`http://localhost:8088/eateryOutings${eateryOutingId}`, {
+            return fetch(`http://localhost:8088/eateryOutings/${eateryOutingId}`, {
                 method: "DELETE"
             })
             .then(getMatches)

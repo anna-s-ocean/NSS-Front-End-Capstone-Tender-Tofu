@@ -28,20 +28,6 @@
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
       "restaurantName": "The Wild Cow",
       "userId": 2,
-      "eateryOutingId": 7,
-      "id": 2
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 3,
-      "eateryOutingId": 7,
-      "id": 2
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
       "eateryOutingId": 6,
       "id": 9
     },
@@ -130,14 +116,6 @@
       "id": 6,
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
       "restaurantName": "The Wild Cow"
-    },
-    {
-      "userId": 1,
-      "friendId": 2,
-      "dateTime": "2021-02-18T06:00:00.000Z",
-      "id": 7,
-      "restaurantName": "The Wild Cow",
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg"
     }
   ]
 }

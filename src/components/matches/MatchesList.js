@@ -12,9 +12,9 @@ import { RestaurantContext } from "../restaurant/RestaurantProvider"
 export const MatchesList = () => {
 
     //what needs to be imported?
-    const { matches, getMatches } = useContext(MatchesContext)
+    const { matches, getMatches, deleteMatchedEateryOuting, getEateryOutingById } = useContext(MatchesContext)
     const { getRestaurants } = useContext(RestaurantContext)
-
+    const [match, setMatch] = useState({})
 
     //what needs to be in the useEffect?
     useEffect(()=>{
@@ -22,11 +22,10 @@ export const MatchesList = () => {
         getRestaurants()
     }, [])
 
+
     //functions?
     //handleClickDelete function
-    const handleClickDeleteEateryOuting = () => {
-
-    }
+   
 
     const handleClickEditEateryOuting = () => {
 
