@@ -12,6 +12,7 @@ import { RestaurantList } from "./restaurant/RestaurantList"
 import { EateryOutingProvider } from "./matches/EateryOutingProvider"
 import { SingleMatchesProvider } from "./matches/SingleMatchProvider"
 import { EateryOutingSelectList } from "./matches/EateryOutingSelectList"
+import { MatchesList } from "./matches/MatchesList"
 
 export const ApplicationViews = () => {
     return (
@@ -38,9 +39,9 @@ export const ApplicationViews = () => {
                             <Route path ="/restaurantOuting">
                                 <RestaurantForm />
                             </Route>
-                            {/* <Route exact path ="/restaurantSelection">
-                                <RestaurantList/>
-                            </Route> */}
+                            <Route exact path ="/pastOutings">
+                                <MatchesList/>
+                            </Route>
                             <Route exact path ="/restaurantSelection/:eateryOutingFromParamsId(\d+)">
                                 <RestaurantList/>
                             </Route>

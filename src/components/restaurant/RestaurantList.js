@@ -1,7 +1,6 @@
 //display the restaurant data in a card that can be 
 //accepted or declined. accepted restaurants are stored in the database.json as new objects
 import React, { useContext, useEffect, useState } from "react"
-// import ReactDOM from "react-dom";
 import { RestaurantContext } from "./RestaurantProvider"
 import { RestaurantCard } from "./RestaurantCard"
 import { useHistory, useParams } from "react-router-dom" 
@@ -17,8 +16,7 @@ export const RestaurantList = () => {
   const [ restaurantIndex, setRestaurantIndex ] = useState(0)
   const {eateryOutingFromParamsId} = useParams();
   const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
-  const MATCH_REFRESH_INTERVAL = 7000; //time delay in milliseconds 
-  // const [eateryOutingByIdObject, setEateryOutingByIdObject] = useState[{}]
+  const MATCH_REFRESH_INTERVAL = 1000; //time delay in milliseconds 
   const [isLoading, setIsLoading] = useState(true); //the purpose of this code?
   const history = useHistory()
   
@@ -65,6 +63,7 @@ export const RestaurantList = () => {
       displayNext()
     }
     
+
     //function to display one restaurant at a time (not a loop, but uses an index)
     //when either accept or delete button is clicked information function is called to show next
     const displayNext = ( ) =>{
@@ -121,6 +120,7 @@ export const RestaurantList = () => {
           let restaurantId = res[i].restaurantId
           updateEateryOuting(id, restaurantName , restaurantId )
           .then(window.alert("a match has been found " + res[i].restaurantName))
+          history.push("/pastOutings")
           
           return
           // eateryOutingObject[restaurantId] = res[i].restaurantId   //update the eateryOutings database with restaurantId and restaurantName

@@ -1,14 +1,16 @@
-//display the date, location, and friends 
-//info from the specfic eatery outing
-// desire to display a single match when second user is swiping
+//display info from the specfic eatery outing
 //and to display a list of past eateryouting (with all information)
-// potential need to change the class for styling
 //if statement to ensure that eateryOuting has all the proper key/value pairs
 
 //later add a detail page 
 //link to YElP website
 //update the date Time
 //This is why I wanted to have names for the events :(
+
+
+
+
+//add a button for delete and edit
 import React from "react"
 
 export const MatchCard = ({match}) => {
@@ -18,6 +20,8 @@ export const MatchCard = ({match}) => {
             <div className="match__userId">{match.userId}</div>
             <div className="match__friendId">{match.friendId}</div>
             <div className="match__dateTime">{match.dateTime}</div>
+            <button >Edit</button>
+            <button> Delete</button>
         </section>
     )
 }
