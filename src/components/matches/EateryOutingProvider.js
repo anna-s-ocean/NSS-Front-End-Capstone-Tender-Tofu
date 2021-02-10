@@ -6,7 +6,7 @@ export const MatchesContext = createContext()
 // This component establishes what data can be used.
 export const EateryOutingProvider = (props) => {
     let [matches, setMatches] = useState([])
-    let [eateryOutingId, setEateryOutingId] = useState(0)
+   
 
 
     const getMatches = () => {
@@ -26,7 +26,6 @@ export const EateryOutingProvider = (props) => {
         })
         .then(res => res.json())
         .then( (outingObj) => {
-            // setEateryOutingId(outingObj.id)})
             getMatches()
             return outingObj.id})  
     }
@@ -40,19 +39,18 @@ export const EateryOutingProvider = (props) => {
         return fetch (`http://localhost:8088/eateryOutings?friendId=${id}`)
             .then(res => res.json())
     }
-    const updateMatches= match => {
-        return fetch(`http://localhost:8088/eateryOutings/${match.id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(match)
-        })
-          .then(getMatches)
-      }
-      //update the eatery outing with patch 
-      
+    // const updateMatches= match => {
+    //     return fetch(`http://localhost:8088/eateryOutings/${match.id}`, {
+    //       method: "PUT",
+    //       headers: {
+    //         "Content-Type": "application/json"
+    //       },
+    //       body: JSON.stringify(match)
+    //     })
+    //       .then(getMatches)
+    //   }
 
+      //update the eatery outing with patch 
       const updateEateryOuting = (id,  restaurantName, restaurantId) => {
           return fetch(`http://localhost:8088/eateryOutings/${id}`, {
               method: "PATCH",
@@ -67,13 +65,20 @@ export const EateryOutingProvider = (props) => {
           .then( res => res.json())
           .then( json => console.log(json))
       }
+
+      const deleteMatchedEateryOuting = (eateryOutingId) => {
+            return fetch(`http://localhost:8088/eateryOutings${eateryOutingId}`, {
+                method: "DELETE"
+            })
+            .then(getMatches)
+      }
     /*
          Return a context provider which has the `match` state, `getMatches` function,
         and the `addEateryOuting` function as keys. This allows any child elements to access them.
     */
     return (
         <MatchesContext.Provider value={{
-            matches, getMatches, addEateryOuting, getEateryOutingById, updateMatches, eateryOutingId, getEateryOutingByFriendId, updateEateryOuting
+            matches, getMatches, addEateryOuting, getEateryOutingById, getEateryOutingByFriendId, updateEateryOuting, deleteMatchedEateryOuting
         }}>
             {props.children}
         </MatchesContext.Provider>
