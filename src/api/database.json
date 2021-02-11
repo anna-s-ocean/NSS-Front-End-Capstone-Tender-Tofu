@@ -14,6 +14,11 @@
       "email": "wm@gmail.com",
       "name": "Willow Monroe",
       "id": 3
+    },
+    {
+      "email": "marie@moore.com",
+      "name": "Marie Moore",
+      "id": 4
     }
   ],
   "singleUserRestaurantMatches": [
@@ -93,6 +98,272 @@
       "userId": 2,
       "eateryOutingId": 1,
       "id": 18
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 1,
+      "eateryOutingId": 5,
+      "id": 19
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 1,
+      "eateryOutingId": 5,
+      "id": 20
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 1,
+      "eateryOutingId": 5,
+      "id": 21
+    },
+    {
+      "restaurantId": "SORfr76--4UporsAlVrtbw",
+      "restaurantName": "Deep Sea Vegan",
+      "userId": 1,
+      "eateryOutingId": 5,
+      "id": 22
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 1,
+      "eateryOutingId": 5,
+      "id": 23
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 1,
+      "eateryOutingId": 5,
+      "id": 24
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 1,
+      "eateryOutingId": 5,
+      "id": 25
+    },
+    {
+      "restaurantId": "TVO-R_N5CGCNum4-TjrLDA",
+      "restaurantName": "Hawkers Asian Street Food - Nashville",
+      "userId": 1,
+      "eateryOutingId": 5,
+      "id": 26
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 4,
+      "eateryOutingId": 11,
+      "id": 27
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 4,
+      "eateryOutingId": 11,
+      "id": 28
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 4,
+      "eateryOutingId": 11,
+      "id": 29
+    },
+    {
+      "restaurantId": "TVO-R_N5CGCNum4-TjrLDA",
+      "restaurantName": "Hawkers Asian Street Food - Nashville",
+      "userId": 4,
+      "eateryOutingId": 11,
+      "id": 30
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 1,
+      "eateryOutingId": 11,
+      "id": 31
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 1,
+      "eateryOutingId": 11,
+      "id": 32
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 1,
+      "eateryOutingId": 11,
+      "id": 33
+    },
+    {
+      "restaurantId": "SORfr76--4UporsAlVrtbw",
+      "restaurantName": "Deep Sea Vegan",
+      "userId": 1,
+      "eateryOutingId": 11,
+      "id": 34
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 1,
+      "eateryOutingId": 11,
+      "id": 35
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 1,
+      "eateryOutingId": 11,
+      "id": 36
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 1,
+      "eateryOutingId": 11,
+      "id": 37
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 4,
+      "eateryOutingId": 12,
+      "id": 38
+    },
+    {
+      "restaurantId": "SORfr76--4UporsAlVrtbw",
+      "restaurantName": "Deep Sea Vegan",
+      "userId": 4,
+      "eateryOutingId": 12,
+      "id": 39
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 4,
+      "eateryOutingId": 12,
+      "id": 40
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 4,
+      "eateryOutingId": 12,
+      "id": 41
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 4,
+      "eateryOutingId": 12,
+      "id": 42
+    },
+    {
+      "restaurantId": "TVO-R_N5CGCNum4-TjrLDA",
+      "restaurantName": "Hawkers Asian Street Food - Nashville",
+      "userId": 4,
+      "eateryOutingId": 12,
+      "id": 43
+    },
+    {
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
+      "restaurantName": "E+ROSE Wellness Bodega at 505",
+      "userId": 4,
+      "eateryOutingId": 12,
+      "id": 44
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 1,
+      "eateryOutingId": 12,
+      "id": 45
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 1,
+      "eateryOutingId": 12,
+      "id": 46
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 1,
+      "eateryOutingId": 12,
+      "id": 47
+    },
+    {
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
+      "restaurantName": "E+ROSE Wellness Bodega at 505",
+      "userId": 4,
+      "eateryOutingId": 13,
+      "id": 48
+    },
+    {
+      "restaurantId": "Yu_tXvUoyOj5SpeDUOZwnQ",
+      "restaurantName": "The BE Hive",
+      "userId": 4,
+      "eateryOutingId": 13,
+      "id": 49
+    },
+    {
+      "restaurantId": "8jwsNjvVNJiYN7AnxHdMLA",
+      "restaurantName": "Yeast Nashville",
+      "userId": 4,
+      "eateryOutingId": 13,
+      "id": 50
+    },
+    {
+      "restaurantId": "C8pZeqR_g_lDa0vom1ECdQ",
+      "restaurantName": "Black Dynasty Ramen",
+      "userId": 4,
+      "eateryOutingId": 13,
+      "id": 51
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 1,
+      "eateryOutingId": 13,
+      "id": 52
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 1,
+      "eateryOutingId": 13,
+      "id": 53
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 1,
+      "eateryOutingId": 13,
+      "id": 54
+    },
+    {
+      "restaurantId": "TVO-R_N5CGCNum4-TjrLDA",
+      "restaurantName": "Hawkers Asian Street Food - Nashville",
+      "userId": 1,
+      "eateryOutingId": 13,
+      "id": 55
+    },
+    {
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
+      "restaurantName": "E+ROSE Wellness Bodega at 505",
+      "userId": 1,
+      "eateryOutingId": 13,
+      "id": 56
     }
   ],
   "eateryOutings": [
@@ -163,6 +434,30 @@
       "friendId": 1,
       "dateTime": "2021-02-11T06:00:00.000Z",
       "id": 10
+    },
+    {
+      "userId": 4,
+      "friendId": 1,
+      "dateTime": "2021-03-20T05:00:00.000Z",
+      "id": 11,
+      "restaurantName": "Avo",
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg"
+    },
+    {
+      "userId": 4,
+      "friendId": 1,
+      "dateTime": "2021-02-28T06:00:00.000Z",
+      "id": 12,
+      "restaurantName": "Vege-licious",
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA"
+    },
+    {
+      "userId": 4,
+      "friendId": 1,
+      "dateTime": "2021-03-28T05:00:00.000Z",
+      "id": 13,
+      "restaurantName": "E+ROSE Wellness Bodega at 505",
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA"
     }
   ]
 }

@@ -36,10 +36,6 @@ export const RestaurantForm = () => {
       const [isLoading, setIsLoading] = useState(true);
 
 
-       /*
-      Reach out to the world and get *** state on initialization, 
-      so we can provide their data in the form dropdowns
-      */
       useEffect( () => {
         getUsers()
 
@@ -54,10 +50,6 @@ export const RestaurantForm = () => {
         const newRestaurant = { ...restaurant }
         if (typeof event.getMonth === 'function'){
           console.log(event, "this is the date from the calender")
-          //update the date format to only include YYYY-MM-DD not time as well
-          // let [dateReformat, trash] = event.split("00")
-          // console.log(dateReformat)
-          // newRestaurant.dateTime = dateReformat
           newRestaurant.dateTime = event
         }else {
           let selectedVal = event.target.value

@@ -39,7 +39,7 @@ export const ApplicationViews = () => {
                             <Route path ="/restaurantOuting">
                                 <RestaurantForm />
                             </Route>
-                            <Route exact path ="/pastOutings">
+                            <Route exact path ="/plannedOutings">
                                 <MatchesList/>
                             </Route>
                             <Route exact path ="/restaurantSelection/:eateryOutingFromParamsId(\d+)">

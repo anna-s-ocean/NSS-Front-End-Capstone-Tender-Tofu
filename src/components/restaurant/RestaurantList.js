@@ -16,7 +16,7 @@ export const RestaurantList = () => {
   const [ restaurantIndex, setRestaurantIndex ] = useState(0)
   const {eateryOutingFromParamsId} = useParams();
   const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
-  const MATCH_REFRESH_INTERVAL = 5000; //time delay in milliseconds 
+  const MATCH_REFRESH_INTERVAL = 500; //time delay in milliseconds 
   const [isLoading, setIsLoading] = useState(true); //the purpose of this code?
   const history = useHistory()
   
@@ -120,7 +120,7 @@ export const RestaurantList = () => {
           let restaurantId = res[i].restaurantId
           updateEateryOuting(id, restaurantName , restaurantId )
           .then(window.alert("a match has been found " + res[i].restaurantName))
-          history.push("/pastOutings")
+          history.push("/plannedOutings")
           
           return
           // eateryOutingObject[restaurantId] = res[i].restaurantId   //update the eateryOutings database with restaurantId and restaurantName
