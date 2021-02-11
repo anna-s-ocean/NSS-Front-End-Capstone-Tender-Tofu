@@ -7,7 +7,7 @@
     },
     {
       "email": "os@gmail.com",
-      "name": "Oceana Sonoma",
+      "name": "Ocean Sonoma",
       "id": 2
     },
     {
@@ -20,8 +20,8 @@
     {
       "id": 1,
       "userId": 1,
-      "restaurantId": 1,
-      "restaurantName": "Deep Sea Vegan",
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
       "eateryOutingId": 1
     },
     {
@@ -72,6 +72,27 @@
       "userId": 2,
       "eateryOutingId": 3,
       "id": 15
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 8,
+      "id": 16
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 1,
+      "eateryOutingId": 8,
+      "id": 17
+    },
+    {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 1,
+      "id": 18
     }
   ],
   "eateryOutings": [
@@ -79,9 +100,9 @@
       "id": 1,
       "userId": 1,
       "friendId": 2,
-      "restuarantId": 1,
       "dateTime": 98723987204,
-      "restaurantName": "exampleName"
+      "restaurantName": "The Wild Cow",
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg"
     },
     {
       "userId": 2,
@@ -116,6 +137,32 @@
       "id": 6,
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
       "restaurantName": "The Wild Cow"
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-13T06:00:00.000Z",
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 8,
+      "restaurantName": "The Wild Cow",
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg"
+    },
+    {
+      "userId": 1,
+      "friendId": 2,
+      "dateTime": "2021-02-13T06:00:00.000Z",
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 10
     }
   ]
 }

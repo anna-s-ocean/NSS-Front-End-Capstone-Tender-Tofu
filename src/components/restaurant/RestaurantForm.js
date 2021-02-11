@@ -53,6 +53,11 @@ export const RestaurantForm = () => {
         always create a copy, make changes, and then set state.*/
         const newRestaurant = { ...restaurant }
         if (typeof event.getMonth === 'function'){
+          console.log(event, "this is the date from the calender")
+          //update the date format to only include YYYY-MM-DD not time as well
+          // let [dateReformat, trash] = event.split("00")
+          // console.log(dateReformat)
+          // newRestaurant.dateTime = dateReformat
           newRestaurant.dateTime = event
         }else {
           let selectedVal = event.target.value

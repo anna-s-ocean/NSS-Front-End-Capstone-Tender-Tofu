@@ -17,24 +17,30 @@ export const EateryOutingSelectList = () => {
         
         getEateryOutingByFriendId(currentUserId)
          .then((filterFriendArray) => {
-
-             const noRestaurantNameFilterArray = filterFriendArray.filter( (eatingOutingObj)=> eatingOutingObj.restuarantId === undefined)
+            //this filter of undefined is not working with undefined as a value of restaurantId
+            // another Option is to use for loop with if statement
+            //  const noRestaurantNameFilterArray = filterFriendArray.filter( (eatingOutingObj)=> !eatingOutingObj.restuarantId.includes(" "))
             
+             let noRestaurantNameFilterArray = []
+
+             for( let i=0; filterFriendArray.length > i; i++){
+                    if(filterFriendArray[i].restaurantId){
+
+                    }else{
+                        noRestaurantNameFilterArray.push(filterFriendArray[i])
+                    }
+             }
             setEateryOutingsFilter(noRestaurantNameFilterArray)})
     }, [])
 
     
     const handleClickSelectEateryOuting = (outingId) => {
-        // set the state of eateryOutingId
-        //display the restaurant select page
         
         eateryOutingId = outingId
         // setEateryOutingId(outingId)
         RestaurantList()
     }
-    // useEffect ( ()=> {
-    //     getMatches()
-    // }, [])
+
 
     return(
         <div className="eateryOutingSelect">

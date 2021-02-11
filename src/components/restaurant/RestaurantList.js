@@ -16,7 +16,7 @@ export const RestaurantList = () => {
   const [ restaurantIndex, setRestaurantIndex ] = useState(0)
   const {eateryOutingFromParamsId} = useParams();
   const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
-  const MATCH_REFRESH_INTERVAL = 1000; //time delay in milliseconds 
+  const MATCH_REFRESH_INTERVAL = 5000; //time delay in milliseconds 
   const [isLoading, setIsLoading] = useState(true); //the purpose of this code?
   const history = useHistory()
   

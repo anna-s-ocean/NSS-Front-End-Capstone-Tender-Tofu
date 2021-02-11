@@ -15,17 +15,12 @@ export const MatchesList = () => {
     const { matches, getMatches, deleteMatchedEateryOuting, getEateryOutingById } = useContext(MatchesContext)
     const { getRestaurants } = useContext(RestaurantContext)
     const [match, setMatch] = useState({})
-
+    const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
     //what needs to be in the useEffect?
     useEffect(()=>{
-        getMatches()
         getRestaurants()
-    }, [])
-
-
-    //functions?
-    //handleClickDelete function
-   
+        .then(getMatches)
+    }, [])   
 
     const handleClickEditEateryOuting = () => {
 
@@ -33,12 +28,15 @@ export const MatchesList = () => {
 
     //filter by restaurantId existing in object 
     const CompletedMatchesArray = matches.filter( (match) =>   match.restaurantName)
+    const UserFilteredMatchesArray = CompletedMatchesArray.filter( (match ) => (match.userId === currentUserId || match.friendId === currentUserId ))
+
+    console.log(UserFilteredMatchesArray)
     //return statement that includes matchesCard
     return (
         <div className="eateryOutingMatches">
             <h2>Planned Eatery Outings</h2> 
             {
-                CompletedMatchesArray.map(match => {
+                UserFilteredMatchesArray.map(match => {
                     return <MatchCard key={match.id} match={match} />
                 })
             }
