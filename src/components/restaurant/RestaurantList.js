@@ -98,15 +98,7 @@ export const RestaurantList = () => {
    //filter to determine if a restaurant id is on the same list twice
    useInterval(  () => {
     console.log("Checking for matching restaurantId in singleUserRestaurantMatches with the same eateryOuting Id")
-    //getEateryOutingById returns a promise soooo chain a dot then ..
-    //update matches
-    // let eateryOutingObject = []
-    // getEateryOutingById(eateryOutingFromParamsId)
-    // .then(res => console.log(res))
-    // .then(res => setEateryOutingByIdObject(res))
-    // .then((res) => res = eateryOutingObject)
-
-
+  
     getSingleMatchesByEateryOutingId(parseInt(eateryOutingFromParamsId))
     .then(res => {
       console.log("first console of res" ,res)
@@ -123,9 +115,7 @@ export const RestaurantList = () => {
           history.push("/plannedOutings")
           
           return
-          // eateryOutingObject[restaurantId] = res[i].restaurantId   //update the eateryOutings database with restaurantId and restaurantName
-          // eateryOutingObject[restaurantName] = res[i].restaurantName
-          //call the function to display match (not written yet)
+          
         }
       }
     })

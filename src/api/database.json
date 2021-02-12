@@ -458,6 +458,12 @@
       "id": 13,
       "restaurantName": "E+ROSE Wellness Bodega at 505",
       "restaurantId": "yKe6c61BxTY6z7YR6zFFFA"
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-02-20T06:00:00.000Z",
+      "id": 14
     }
   ]
 }
