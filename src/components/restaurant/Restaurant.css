@@ -1,9 +1,23 @@
-/* .restaurant_image_URL {
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    padding-bottom: 10px;
-} */
-/* .restaurant{
-    
-} */
+.restaurant_image_URL {
+    position: static;
+    height: 450px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-position: 50% 50%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;  
+}
+
+.restaurant{
+    margin: auto;
+    width: 80%;
+    border: 3px solid green;
+    padding: 10Px;
+}

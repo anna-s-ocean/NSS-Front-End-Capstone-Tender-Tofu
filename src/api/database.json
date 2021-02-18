@@ -121,62 +121,6 @@
       "userId": 2,
       "eateryOutingId": 13,
       "id": 13
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 14
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 15
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 16
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 17
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 18
-    },
-    {
-      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
-      "restaurantName": "E+ROSE Wellness Bodega at 505",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 19
-    },
-    {
-      "restaurantId": "Yu_tXvUoyOj5SpeDUOZwnQ",
-      "restaurantName": "The BE Hive",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 20
-    },
-    {
-      "restaurantId": "rs2OZH_vIKgW2Zk59OnZ2A",
-      "restaurantName": "Falcon Coffee Bar",
-      "userId": 2,
-      "eateryOutingId": 0,
-      "id": 21
     }
   ],
   "eateryOutings": [
@@ -259,6 +203,12 @@
       "friendId": 1,
       "dateTime": "2021-02-11T06:00:00.000Z",
       "id": 13
+    },
+    {
+      "userId": 1,
+      "friendId": 3,
+      "dateTime": "2021-02-16T06:00:00.000Z",
+      "id": 14
     }
   ]
 }
