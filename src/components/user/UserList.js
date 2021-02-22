@@ -1,4 +1,5 @@
 // use user.js to list out the users
+//Strech goal to display past and upcoming eatery outings of users/friends
 import React, { useContext, useEffect } from "react"
 import { UserContext } from "./UserProvider"
 import { UserCard } from "./User"

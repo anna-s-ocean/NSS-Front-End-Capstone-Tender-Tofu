@@ -12,6 +12,7 @@ import { RestaurantList } from "./restaurant/RestaurantList"
 import { EateryOutingProvider } from "./matches/EateryOutingProvider"
 import { SingleMatchesProvider } from "./matches/SingleMatchProvider"
 import { EateryOutingSelectList } from "./matches/EateryOutingSelectList"
+import { MatchesList } from "./matches/MatchesList"
 
 export const ApplicationViews = () => {
     return (
@@ -22,17 +23,12 @@ export const ApplicationViews = () => {
             </Route>
 
             {/* Render the user list when http://localhost:3000/users */}
-            <UserProvider>
+            {/* <UserProvider>
                 <Route path="/users">
                     <UserList/>
                 </Route>
-            </UserProvider>
+            </UserProvider> */}
 
-            <EateryOutingProvider>
-                <Route exact path="/halfwayFilledOutEateryFormNowFriendSelects">
-                    <EateryOutingSelectList />
-                </Route>
-            </EateryOutingProvider>
 
             {/* Render the restaurant form when http://localhost:3000/restaurantOuting */}
             {/* can only have one eateryOutingProvider because of state errors */}
@@ -43,8 +39,14 @@ export const ApplicationViews = () => {
                             <Route path ="/restaurantOuting">
                                 <RestaurantForm />
                             </Route>
-                            <Route path ="/restaurantSelection">
+                            <Route exact path ="/plannedOutings">
+                                <MatchesList/>
+                            </Route>
+                            <Route exact path ="/restaurantSelection/:eateryOutingFromParamsId(\d+)">
                                 <RestaurantList/>
+                            </Route>
+                            <Route exact path="/halfwayFilledOutEateryFormNowFriendSelects">
+                                <EateryOutingSelectList />
                             </Route>
                         </RestaurantProvider>
                     </UserProvider>

@@ -6,7 +6,7 @@ export const MatchesContext = createContext()
 // This component establishes what data can be used.
 export const EateryOutingProvider = (props) => {
     let [matches, setMatches] = useState([])
-    let [eateryOutingId, setEateryOutingId] = useState(0)
+   
 
 
     const getMatches = () => {
@@ -26,9 +26,8 @@ export const EateryOutingProvider = (props) => {
         })
         .then(res => res.json())
         .then( (outingObj) => {
-            setEateryOutingId(outingObj.id)})
-        .then(console.log())
-        .then(getMatches)  
+            getMatches()
+            return outingObj.id})  
     }
 
     const getEateryOutingById = (id) => {
@@ -40,15 +39,38 @@ export const EateryOutingProvider = (props) => {
         return fetch (`http://localhost:8088/eateryOutings?friendId=${id}`)
             .then(res => res.json())
     }
-    const updateMatches= match => {
-        return fetch(`http://localhost:8088/eateryOutings/${match.id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(match)
-        })
-          .then(getMatches)
+    // const updateMatches= match => {
+    //     return fetch(`http://localhost:8088/eateryOutings/${match.id}`, {
+    //       method: "PUT",
+    //       headers: {
+    //         "Content-Type": "application/json"
+    //       },
+    //       body: JSON.stringify(match)
+    //     })
+    //       .then(getMatches)
+    //   }
+
+      //update the eatery outing with patch 
+      const updateEateryOuting = (id,  restaurantName, restaurantId) => {
+          return fetch(`http://localhost:8088/eateryOutings/${id}`, {
+              method: "PATCH",
+              headers: {
+                "Content-Type": "application/json"
+            },
+              body: JSON.stringify({
+                  restaurantName: restaurantName,
+                  restaurantId: restaurantId
+              })  
+          })
+          .then( res => res.json())
+          .then( json => console.log(json))
+      }
+
+      const deleteMatchedEateryOuting = (eateryOutingId) => {
+            return fetch(`http://localhost:8088/eateryOutings/${eateryOutingId}`, {
+                method: "DELETE"
+            })
+            .then(getMatches)
       }
     /*
          Return a context provider which has the `match` state, `getMatches` function,
@@ -56,7 +78,7 @@ export const EateryOutingProvider = (props) => {
     */
     return (
         <MatchesContext.Provider value={{
-            matches, getMatches, addEateryOuting, getEateryOutingById, updateMatches, eateryOutingId, getEateryOutingByFriendId
+            matches, getMatches, addEateryOuting, getEateryOutingById, getEateryOutingByFriendId, updateEateryOuting, deleteMatchedEateryOuting
         }}>
             {props.children}
         </MatchesContext.Provider>

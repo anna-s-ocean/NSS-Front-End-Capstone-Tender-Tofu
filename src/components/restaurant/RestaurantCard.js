@@ -21,7 +21,7 @@ export const RestaurantCard = ({restaurant, handleClickAcceptRestaurant, handleC
             <div className= "restaurant_price_range">Price {restaurant.price}</div>
             <div className= "restaurant_rating">Rating {restaurant.rating}</div>
             <button id= "restaurant_accept_BTN" onClick={() => {handleClickAcceptRestaurant(restaurant)}}> Accept</button>
-            <button onClick={handleClickDeclineRestaurant}>Decline</button>
+            <button id="restaurant_decline_BTN" onClick={handleClickDeclineRestaurant}>Decline</button>
         </section>
     )
 
