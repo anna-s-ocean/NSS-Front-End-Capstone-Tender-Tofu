@@ -51,13 +51,15 @@ img{
 }
 
 /* styling for link */
-
-
 .restaurant__URL {
     color: darkgreen;
     font-size: x-large;
-
+    /* text-shadow: 1px 1px 1px #555; */
+    font-weight: bold;
+    background-color: #edf2ef;
+    padding: 1px;
 }
+
 a:link {
     text-decoration: none;
 }
@@ -82,12 +84,3 @@ a:hover {
       /* border: 3px solid green; */
       padding: 30Px;
   }
-/* .restaurant_image_URL {
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    padding-bottom: 10px;
-}
-.restaurant{
-    display: flex;
-} */

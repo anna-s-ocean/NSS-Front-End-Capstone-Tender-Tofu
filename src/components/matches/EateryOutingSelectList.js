@@ -45,7 +45,7 @@ export const EateryOutingSelectList = () => {
 
     return(
         <div className="eateryOutingSelect">
-            <h2>Choose the restaurants</h2>
+            <h2 className="title">Choose the Restaurants</h2>
             <div className="eateryOutings">
             {
                 eateryOutingsFilter.map(outing => {

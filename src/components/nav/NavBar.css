@@ -7,10 +7,13 @@
     
     border-radius: 10px;
     margin: auto;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: larger;
+    height: 40px;
 }
-
+/* .navbar__links{
+    flex-direction: column;
+} */
 .navbar__item {
     flex-basis: 30%;
     list-style-type: none;
@@ -22,7 +25,7 @@ li a{
 }
 .logout{
     display: flex;
-    /* justify-content: right; */
+    float: right;
 }
 .logout__button{
     float: right;
@@ -31,6 +34,7 @@ li a{
     font-size: larger;
     color: darkgreen;
     border-radius: 8px;
-    /* margin-right: 70px; */
-
+    position: absolute;
+    right: 40px;
+    padding: 2px 7px;
 }

@@ -16,20 +16,20 @@ export const NavBar = (props) => {
             {/* <li className="navbar__item">
                 <Link className="navbar__link" to="/users">Users</Link>
             </li> */}
-            <li className="navbar__item">
-                <Link className="navbar__link" to="/restaurantOuting">New Restauant Outings</Link>
-            </li>
-            <li className="navbar__item">
-                <Link className="navbar__link" to="/plannedOutings">Planned Restauant Outings</Link>
-            </li>
-            <li className="navbar__item">
-                <Link className="navbar__link" to="/halfwayFilledOutEateryFormNowFriendSelects">Friend's turn to swipe</Link>
-            </li>
-
+            {/* <div className="navbar__links"> */}
+                <li className="navbar__item">
+                    <Link className="navbar__link" to="/restaurantOuting">New Restauant Outings</Link>
+                </li>
+                <li className="navbar__item">
+                    <Link className="navbar__link" to="/plannedOutings">Planned Restauant Outings</Link>
+                </li>
+                <li className="navbar__item">
+                    <Link className="navbar__link" to="/halfwayFilledOutEateryFormNowFriendSelects">Friend's turn to swipe</Link>
+                </li>
+                <li className="navbar__item logout">
+                    <Logout />
+                </li>
         </ul>
-            {/* // <li className="navbar__item logout"> */}
-                <Logout />
-            {/* // </li> */}
     </>
     )
 }
