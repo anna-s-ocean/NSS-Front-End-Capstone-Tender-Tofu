@@ -9,3 +9,11 @@ textarea {
   line-height: 1.5;
   /* background-color: rgb(148, 160, 168); */
 }
+
+.logo__Image{
+  width: 30%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

@@ -1,8 +1,9 @@
 //displays the match do to short polling 
 import React, { useState }from "react"
 import { Link } from "react-router-dom"
+import "./Matches.css"
 
-//look back at nutshell to get function for changing friend id to friend name
+
 
 export const EateryOutingCard = ({outing, handleClickSelectEateryOuting}) => {
     

@@ -4,6 +4,7 @@ import React, { useContext, useEffect, useState } from "react"
 import ReactDOM from "react-dom";
 import {  MatchesContext } from "./EateryOutingProvider";
 import { EateryOutingCard } from "./EateryOutingSelectCard"
+import "./Matches.css"
 
 export const EateryOutingSelectList = () => {
     const { getMatches, getEateryOutingById, getEateryOutingByFriendId  } = useContext(MatchesContext)
@@ -30,12 +31,14 @@ export const EateryOutingSelectList = () => {
     }
     return(
         <div className="eateryOutingSelect">
-            <h2>Chose the restaurants</h2>
+            <h2>Choose the restaurants</h2>
+            <div className="eateryOutings">
             {
-            eateryOutingsFilter.map(outing => {
-                return <EateryOutingCard key= {outing.id} outing={outing} handleClickSelect={handleClickSelectEateryOuting}/>
-            })
+                eateryOutingsFilter.map(outing => {
+                    return <EateryOutingCard key= {outing.id} outing={outing} handleClickSelect={handleClickSelectEateryOuting}/>
+                })
             }
+            </div>
         </div>
     )
 }

@@ -1,0 +1,19 @@
+#eateryOuting_select_BTN{
+    background-color:darkgreen;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+.eateryOutings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.eateryOuting{
+    flex-basis: 24%;
+      margin: 1em;
+      padding: 1em;
+      border: 2px solid darkgreen;
+}
