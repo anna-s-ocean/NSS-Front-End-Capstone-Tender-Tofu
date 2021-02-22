@@ -1,8 +1,17 @@
+.restaurants{
+    text-align: center; 
+    color: darkgreen;
+}
 .restaurant{
     margin: auto;
     width: 80%;
     border: 3px solid green;
+    border-radius: 20px;
     padding: 10Px;
+    text-align: center;
+}
+.text{
+    font-size: 16px;
 }
 /* styling for image */
 .restaurant_image_URL {
@@ -14,6 +23,7 @@
     background-position: 50% 50%;
     margin: auto;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 img{
@@ -28,6 +38,7 @@ img{
     font-size: 20px;
     padding: 5px;
     margin: 5px;
+    color: white;
 }
 
 #restaurant_decline_BTN{
@@ -36,21 +47,23 @@ img{
     font-size: 20px;
     padding: 5px;
     margin: 5px;
+    color: white;
 }
 
-/* stylinh for link */
-a{
-    color: black;
-}
+/* styling for link */
 
+
+.restaurant__URL {
+    color: darkgreen;
+    font-size: x-large;
+
+}
 a:link {
     text-decoration: none;
-    color: black;
 }
 
 a:hover {
     text-decoration: underline;
-    color: black;
   }
 
   /* restaurant form */

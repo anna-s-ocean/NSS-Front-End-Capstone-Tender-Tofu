@@ -477,6 +477,18 @@
       "friendId": 3,
       "dateTime": "2021-02-20T06:00:00.000Z",
       "id": 14
+    },
+    {
+      "userId": 1,
+      "friendId": 4,
+      "dateTime": "2021-02-18T06:00:00.000Z",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "friendId": 3,
+      "dateTime": "2021-02-09T06:00:00.000Z",
+      "id": 16
     }
   ]
 }

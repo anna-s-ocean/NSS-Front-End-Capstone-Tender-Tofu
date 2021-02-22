@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Redirect } from "react-router-dom"
+import "../nav/NavBar.css"
 
 export const Logout = () => {
     const [loggedOut, setLoggedOut] = useState(false)

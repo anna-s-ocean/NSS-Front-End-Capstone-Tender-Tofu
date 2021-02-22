@@ -8,6 +8,7 @@ import "./NavBar.css"
 
 export const NavBar = (props) => {
     return (
+        <>
         <ul className="navbar">
             {/* <li className="navbar__item active">
                 <Link className="navbar__link" to="/">Tender Tofu</Link>
@@ -24,9 +25,11 @@ export const NavBar = (props) => {
             <li className="navbar__item">
                 <Link className="navbar__link" to="/halfwayFilledOutEateryFormNowFriendSelects">Friend's turn to swipe</Link>
             </li>
-            <li className="navbar__item">
-                <Logout />
-            </li>
+
         </ul>
+            {/* // <li className="navbar__item logout"> */}
+                <Logout />
+            {/* // </li> */}
+    </>
     )
 }

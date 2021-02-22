@@ -4,13 +4,33 @@
     justify-content: left;
     border: solid white 5px;
     background-color: darkgreen;
+    
     border-radius: 10px;
     margin: auto;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: larger;
 }
 
 .navbar__item {
     flex-basis: 30%;
     list-style-type: none;
+    
+}
+
+li a{
+    color: white;
+}
+.logout{
+    display: flex;
+    /* justify-content: right; */
+}
+.logout__button{
+    float: right;
+    display: flex;
+    background-color: white;
+    font-size: larger;
+    color: darkgreen;
+    border-radius: 8px;
+    /* margin-right: 70px; */
+
 }
