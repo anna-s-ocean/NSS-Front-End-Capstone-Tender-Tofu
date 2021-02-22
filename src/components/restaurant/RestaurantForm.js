@@ -13,8 +13,9 @@ import  { Calendar } from 'react-calendar'
 export const RestaurantForm = () => {
     // const { } = useContext(RestaurantContext)
     const { users, getUsers } = useContext(UserContext)
-    const { addEateryOuting } = useContext(MatchesContext)
+    const { addEateryOuting, eateryOutingId } = useContext(MatchesContext)
     const [value, onChange] = useState(new Date())
+    const {eateryOutingFromParamsId} = useParams()
     const currentUserId = parseInt(window.localStorage.getItem('user_tender_tofu'))
 
 
@@ -32,19 +33,11 @@ export const RestaurantForm = () => {
 
 
       const history = useHistory();
-    //   const { friendId } = useParams();
       const [isLoading, setIsLoading] = useState(true);
 
 
-       /*
-      Reach out to the world and get *** state on initialization, 
-      so we can provide their data in the form dropdowns
-      */
       useEffect( () => {
         getUsers()
-        // .then( ()=> {
-
-        // })
 
       }, [])
 
@@ -56,6 +49,7 @@ export const RestaurantForm = () => {
         always create a copy, make changes, and then set state.*/
         const newRestaurant = { ...restaurant }
         if (typeof event.getMonth === 'function'){
+          console.log(event, "this is the date from the calender")
           newRestaurant.dateTime = event
         }else {
           let selectedVal = event.target.value
@@ -84,7 +78,7 @@ export const RestaurantForm = () => {
         //invoke addEateryOuting passing restaurant as an argument.
         //once complete, change the url and display the animal list
         addEateryOuting(restaurant)
-        .then(() => history.push("/restaurantSelection")) 
+        .then((id) => history.push(`/restaurantSelection/${id}`)) 
       }
     }
 
