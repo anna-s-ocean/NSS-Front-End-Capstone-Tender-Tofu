@@ -15,13 +15,14 @@ export const RestaurantCard = ({restaurant, handleClickAcceptRestaurant, handleC
         <section className="restaurant">
             <div className= "restaurant_image_URL">  <img src= {restaurant.image_url} alt="new"/></div>
             <div className= "restaurant_details">
-                <h3 className="restaurant_name">{restaurant.name} </h3>
+                <h3 className="restaurant_name_URL">{<a target="_blank" href={restaurant.url}>{restaurant.name}</a>} </h3>
                 <div className= "restaurant_location">{restaurant.location.display_address}</div>
-                <div className= "restaurant_url"> {<a target="_blank" href={restaurant.url}>Yelp</a>}</div>
+                {/* <div className= "restaurant_url"> {<a target="_blank" href={restaurant.url}>Yelp</a>}</div> */}
+                {/* <div className= "restaurant_url"> {<a target="_blank" href={restaurant.url}>{restaurant.name}</a>}</div> */}
                 <div className= "restaurant_price_range">Price {restaurant.price}</div>
                 <div className= "restaurant_rating">Rating {restaurant.rating}</div>
                 <button id= "restaurant_accept_BTN" onClick={() => {handleClickAcceptRestaurant(restaurant)}}> Accept</button>
-                <button onClick={handleClickDeclineRestaurant}>Decline</button>
+                <button id="restaurant_decline_BTN" onClick={handleClickDeclineRestaurant}>Decline</button>
             </div>
         </section>
     )

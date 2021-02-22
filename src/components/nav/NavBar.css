@@ -2,6 +2,12 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
+    border: solid white 5px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    font-size: larger;
 }
 
 .navbar__item {
