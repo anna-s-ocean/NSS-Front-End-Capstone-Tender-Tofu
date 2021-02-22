@@ -10,6 +10,8 @@ import "./Restaurant.css"
 
 
 export const RestaurantCard = ({restaurant, handleClickAcceptRestaurant, handleClickDeclineRestaurant}) => {
+    // let first, second, third, fourth;
+    // [first, second, third, fourth] = restaurant.location.display_address.split(",")
     
     return (
         <section className="restaurant">
@@ -17,8 +19,8 @@ export const RestaurantCard = ({restaurant, handleClickAcceptRestaurant, handleC
             <div className= "restaurant_details">
                 <h3 className="restaurant_name_URL">{<a target="_blank" href={restaurant.url}>{restaurant.name}</a>} </h3>
                 <div className= "restaurant_location">{restaurant.location.display_address}</div>
-                {/* <div className= "restaurant_url"> {<a target="_blank" href={restaurant.url}>Yelp</a>}</div> */}
-                {/* <div className= "restaurant_url"> {<a target="_blank" href={restaurant.url}>{restaurant.name}</a>}</div> */}
+                {/* <div className= "restaurant_url"> {first}</div> */}
+        
                 <div className= "restaurant_price_range">Price {restaurant.price}</div>
                 <div className= "restaurant_rating">Rating {restaurant.rating}</div>
                 <button id= "restaurant_accept_BTN" onClick={() => {handleClickAcceptRestaurant(restaurant)}}> Accept</button>

@@ -52,3 +52,20 @@ a:hover {
     text-decoration: underline;
     color: black;
   }
+
+  /* restaurant form */
+  .btn-primary{
+    background-color:darkgreen;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .restaurantForm{
+      width: 80%;
+      margin: auto;
+      /* border: 3px solid green; */
+      padding: 30Px;
+  }

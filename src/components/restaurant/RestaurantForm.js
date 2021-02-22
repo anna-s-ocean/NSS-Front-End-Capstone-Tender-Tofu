@@ -129,7 +129,7 @@ export const RestaurantForm = () => {
           </fieldset>
           <button className="btn btn-primary"
             onClick={handleClickSaveRestaurantOuting}>
-            Confirm Restaurant Outing 
+            Confirm  Outing 
           </button>
         </form>
     )

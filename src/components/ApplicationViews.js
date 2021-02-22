@@ -22,11 +22,11 @@ export const ApplicationViews = () => {
             </Route>
 
             {/* Render the user list when http://localhost:3000/users */}
-            <UserProvider>
+            {/* <UserProvider>
                 <Route path="/users">
                     <UserList/>
                 </Route>
-            </UserProvider>
+            </UserProvider> */}
 
             <EateryOutingProvider>
                 <Route exact path="/halfwayFilledOutEateryFormNowFriendSelects">
