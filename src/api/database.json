@@ -254,6 +254,13 @@
       "id": 40
     },
     {
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "restaurantName": "The Wild Cow",
+      "userId": 2,
+      "eateryOutingId": 13,
+      "id": 13
+    },
+    {
       "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
       "restaurantName": "The Southern V",
       "userId": 4,
@@ -462,8 +469,32 @@
     {
       "userId": 2,
       "friendId": 1,
+      "dateTime": "2021-02-11T06:00:00.000Z",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "friendId": 3,
       "dateTime": "2021-02-20T06:00:00.000Z",
       "id": 14
+    },
+    {
+      "userId": 1,
+      "friendId": 4,
+      "dateTime": "2021-02-18T06:00:00.000Z",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "friendId": 3,
+      "dateTime": "2021-02-09T06:00:00.000Z",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "friendId": 2,
+      "dateTime": "2021-02-09T06:00:00.000Z",
+      "id": 17
     }
   ]
 }

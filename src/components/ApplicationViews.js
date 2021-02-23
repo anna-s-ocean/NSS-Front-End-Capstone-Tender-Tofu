@@ -18,9 +18,9 @@ export const ApplicationViews = () => {
     return (
         <>
              {/* Renders when http://localhost:3000/ */}
-             <Route exact path="/">
+             {/* <Route exact path="/">
                 <Home />
-            </Route>
+            </Route> */}
 
             {/* Render the user list when http://localhost:3000/users */}
             {/* <UserProvider>
@@ -36,6 +36,9 @@ export const ApplicationViews = () => {
                 <EateryOutingProvider>
                     <UserProvider>
                         <RestaurantProvider>
+                            <Route exact path="/">
+                                <RestaurantForm />
+                            </Route>
                             <Route path ="/restaurantOuting">
                                 <RestaurantForm />
                             </Route>

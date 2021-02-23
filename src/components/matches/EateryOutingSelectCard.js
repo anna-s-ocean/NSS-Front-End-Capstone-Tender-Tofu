@@ -2,6 +2,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { UserContext } from "../user/UserProvider"
+import "./Matches.css"
 //look back at nutshell to get function for changing friend id to friend name
 
 export const EateryOutingCard = ({outing, handleClickSelect}) => {

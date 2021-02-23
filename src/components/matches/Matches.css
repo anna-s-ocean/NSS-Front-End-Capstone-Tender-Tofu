@@ -1,0 +1,34 @@
+#eateryOuting_select_BTN{
+    background-color:darkgreen;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+.eateryOutings, .matches{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.eateryOuting, .match {
+    flex-basis: 24%;
+      margin: 1em;
+      padding: 1em;
+      border: 2px solid darkgreen;
+      border-radius: 15px;
+}
+
+.match__Delete__BTN{
+    background-color:darkgreen;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+
+}
+
+.title{
+    text-align: center;
+}

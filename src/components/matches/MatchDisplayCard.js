@@ -13,6 +13,7 @@
 import React, { useContext, useEffect } from "react"
 import { MatchesContext } from "./EateryOutingProvider"
 import { UserContext } from "../user/UserProvider"
+import "./Matches.css"
 
 export const MatchCard = ({match}) => {
     const { deleteMatchedEateryOuting } = useContext(MatchesContext)
@@ -40,7 +41,7 @@ export const MatchCard = ({match}) => {
             <div className="match_friends">Friends: {user.name}  and  {friend.name}</div>
             <div className="match__dateTime">{ new Date(match.dateTime).toLocaleDateString()}</div>
             {/* <button >Edit</button> */}
-            <button onClick={handleClickDeleteEateryOuting}> Delete</button>
+            <button className="match__Delete__BTN" onClick={handleClickDeleteEateryOuting}> Delete</button>
         </section>
     )
 }
