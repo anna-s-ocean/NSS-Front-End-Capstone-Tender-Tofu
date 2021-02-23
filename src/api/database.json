@@ -233,81 +233,11 @@
       "id": 37
     },
     {
-      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
-      "restaurantName": "Vege-licious",
-      "userId": 4,
-      "eateryOutingId": 12,
-      "id": 38
-    },
-    {
-      "restaurantId": "SORfr76--4UporsAlVrtbw",
-      "restaurantName": "Deep Sea Vegan",
-      "userId": 4,
-      "eateryOutingId": 12,
-      "id": 39
-    },
-    {
-      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
-      "restaurantName": "Sunflower Cafe",
-      "userId": 4,
-      "eateryOutingId": 12,
-      "id": 40
-    },
-    {
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
       "restaurantName": "The Wild Cow",
       "userId": 2,
       "eateryOutingId": 13,
       "id": 13
-    },
-    {
-      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
-      "restaurantName": "The Southern V",
-      "userId": 4,
-      "eateryOutingId": 12,
-      "id": 41
-    },
-    {
-      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
-      "restaurantName": "Avo",
-      "userId": 4,
-      "eateryOutingId": 12,
-      "id": 42
-    },
-    {
-      "restaurantId": "TVO-R_N5CGCNum4-TjrLDA",
-      "restaurantName": "Hawkers Asian Street Food - Nashville",
-      "userId": 4,
-      "eateryOutingId": 12,
-      "id": 43
-    },
-    {
-      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
-      "restaurantName": "E+ROSE Wellness Bodega at 505",
-      "userId": 4,
-      "eateryOutingId": 12,
-      "id": 44
-    },
-    {
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow",
-      "userId": 1,
-      "eateryOutingId": 12,
-      "id": 45
-    },
-    {
-      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
-      "restaurantName": "Graze Nashville",
-      "userId": 1,
-      "eateryOutingId": 12,
-      "id": 46
-    },
-    {
-      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
-      "restaurantName": "Vege-licious",
-      "userId": 1,
-      "eateryOutingId": 12,
-      "id": 47
     },
     {
       "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
@@ -371,6 +301,62 @@
       "userId": 1,
       "eateryOutingId": 13,
       "id": 56
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 1,
+      "eateryOutingId": 20,
+      "id": 73
+    },
+    {
+      "restaurantId": "SORfr76--4UporsAlVrtbw",
+      "restaurantName": "Deep Sea Vegan",
+      "userId": 1,
+      "eateryOutingId": 20,
+      "id": 74
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 1,
+      "eateryOutingId": 20,
+      "id": 75
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 1,
+      "eateryOutingId": 20,
+      "id": 76
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 1,
+      "eateryOutingId": 20,
+      "id": 77
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 1,
+      "eateryOutingId": 20,
+      "id": 78
+    },
+    {
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
+      "restaurantName": "E+ROSE Wellness Bodega at 505",
+      "userId": 1,
+      "eateryOutingId": 20,
+      "id": 79
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 4,
+      "eateryOutingId": 20,
+      "id": 80
     }
   ],
   "eateryOutings": [
@@ -453,14 +439,6 @@
     {
       "userId": 4,
       "friendId": 1,
-      "dateTime": "2021-02-28T06:00:00.000Z",
-      "id": 12,
-      "restaurantName": "Vege-licious",
-      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA"
-    },
-    {
-      "userId": 4,
-      "friendId": 1,
       "dateTime": "2021-03-28T05:00:00.000Z",
       "id": 13,
       "restaurantName": "E+ROSE Wellness Bodega at 505",
@@ -495,6 +473,14 @@
       "friendId": 2,
       "dateTime": "2021-02-09T06:00:00.000Z",
       "id": 17
+    },
+    {
+      "userId": 1,
+      "friendId": 4,
+      "dateTime": "2021-02-27T06:00:00.000Z",
+      "id": 20,
+      "restaurantName": "The Southern V",
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ"
     }
   ]
 }
