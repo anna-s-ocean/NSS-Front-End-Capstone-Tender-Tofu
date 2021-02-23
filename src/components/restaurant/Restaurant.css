@@ -1,9 +1,86 @@
-/* .restaurant_image_URL {
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    padding-bottom: 10px;
+.restaurants{
+    text-align: center; 
+    color: darkgreen;
 }
 .restaurant{
-    display: flex;
-} */
+    margin: auto;
+    width: 80%;
+    border: 3px solid green;
+    border-radius: 20px;
+    padding: 10Px;
+    text-align: center;
+}
+.text{
+    font-size: 16px;
+}
+/* styling for image */
+.restaurant_image_URL {
+    position: static;
+    height: 450px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-position: 50% 50%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;  
+}
+/* sytling for buttons */
+#restaurant_accept_BTN{
+    background-color: #4CAF50;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+#restaurant_decline_BTN{
+    background-color: #f44336;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+/* styling for link */
+.restaurant__URL {
+    color: darkgreen;
+    font-size: x-large;
+    /* text-shadow: 1px 1px 1px #555; */
+    font-weight: bold;
+    background-color: #edf2ef;
+    padding: 1px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+  }
+
+  /* restaurant form */
+  .btn-primary{
+    background-color:darkgreen;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .restaurantForm{
+      width: 80%;
+      margin: auto;
+      /* border: 3px solid green; */
+      padding: 30Px;
+  }

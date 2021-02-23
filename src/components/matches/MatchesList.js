@@ -8,6 +8,7 @@ import { useHistory, useParams } from "react-router-dom"
 import { RestaurantCard } from "../restaurant/RestaurantCard"
 import { MatchCard } from "./MatchDisplayCard"
 import { RestaurantContext } from "../restaurant/RestaurantProvider"
+import "./Matches.css"
 
 export const MatchesList = () => {
 
@@ -34,12 +35,14 @@ export const MatchesList = () => {
     //return statement that includes matchesCard
     return (
         <div className="eateryOutingMatches">
-            <h2>Planned Eatery Outings</h2> 
+            <h2 className="title">Planned Eatery Outings</h2> 
+            <div className="matches">
             {
                 UserFilteredMatchesArray.map(match => {
                     return <MatchCard key={match.id} match={match} />
                 })
             }
+            </div>
         </div>
     )
 

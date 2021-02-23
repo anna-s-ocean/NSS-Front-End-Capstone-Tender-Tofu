@@ -5,6 +5,7 @@ import { NavBar } from "./nav/NavBar";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 import "./TenderTofu.css";
+import TenderTofuLogo from "./TenderTofuLogo.png";
 
 export const TenderTofu = () => (
   <>
@@ -13,6 +14,9 @@ export const TenderTofu = () => (
         if (localStorage.getItem("user_tender_tofu")) {
           return (
             <>
+              
+              <img className="logo__Image" src={TenderTofuLogo} alt="logo for Tender Tofu" /> 
+             
               <NavBar />
               <ApplicationViews />
             </>
