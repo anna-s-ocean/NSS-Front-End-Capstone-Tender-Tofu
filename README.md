@@ -1,11 +1,12 @@
-# NSS-Front-End-Capstone-Tender-Tofu
+# Tender Tofu
 
-  Simplified Supper is intended to make meal planning easy, allowing the user to see at a glance what they have coming up so grocery shopping is a breeze. By looking at the meals the user has planned for the week, Simplified Supper provides suggested recipes based on the percentage of ingredients that can be repurposed from your chosen meals.
+  Tender Tofu is intented to  take all of the guesswork out of determining where to eat vegetarian cuisine in Nashville. By presenting numerous of the restaurant choices for both users to chose from, Tender Tofu presents the restaurant favorite they have in common for the particular outing.
+  
 
 ## Table of Contents
   * [Project Requirements and Features List](#project-requirements-and-features-list)
   * [Technologies Used](#technologies-used)
-  * [Installing and Launching Simplified Supper](#instructions-for-installing-simplified-supper)
+  * [Installing and Launching Tender Tofu](#instructions-for-installing-tender-tofu)
   * [Appendix 1: Planning Documentation](#appendix-1-planning-documentation)
     * [Entity Relationship Diagrams](#entity-relationship-diagram)
     * [Wireframes](#wireframes)
