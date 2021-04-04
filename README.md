@@ -26,10 +26,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
   <img src="./src/images/react.png" width="10%"></img> <img src="./src/images/momentjs.svg" width="10%"></img> <img src="./src/images/semanticui.png" width="10%"></img> <img src="./src/images/reactbigcalendar.png" width="10%"></img>
 
   ### Development Tools
-  <!-- TODO: Image for wireframe tool -->
-  <!-- FIXME: Update image for slack, currently showing a broken link -->
-  <img src="./src/images/github.png" width="10%"></img> <img src="./src/images/draw.io.jpg" width="10%"></img> <img src="./src/images/git.png" width="10%"></img> <img src="./src/images/vscode.png" width="10%"></img>
-  <!-- <img src="./src/images/slack.png" width="10%"></img> -->
+  <img src="./src/images/github.png" width="10%"></img> <img src="./src/images/draw.io.jpg" width="10%">
 
 ## Instructions for Installing Tender Tofu
   To launch the Simplified Supper app, you will need to have access to command line tools, node package manager, JSON Server. If you do not have access to any of these tools, you can find instructions for installing them in the [Appendix.](#appendix-2-set-up-instructions)
@@ -64,8 +61,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
 
   ### Wireframes/ Mockups
   <img src="./src/images/wireframe_1.png" width="45%"></img> <img src="./src/images/wireframe_2.png" width="45%"></img>
-  <img src="./src/images/wireframe_3.png" width="45%"></img> <img src="./src/images/wireframe_4.png" width="45%"></img>
-  <img src="./src/images/wireframe_5.png" width="45%"></img> <img src="./src/images/wireframe_6.png" width="45%"></img>
+  
 
 
   ## Appendix 2: Set Up Instructions
