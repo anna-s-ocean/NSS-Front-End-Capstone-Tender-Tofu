@@ -31,17 +31,17 @@ Once a user has a recipe on their calendar for the week they will be shown all m
   <img src="./src/images/github.png" width="10%"></img> <img src="./src/images/draw.io.jpg" width="10%"></img> <img src="./src/images/git.png" width="10%"></img> <img src="./src/images/vscode.png" width="10%"></img>
   <!-- <img src="./src/images/slack.png" width="10%"></img> -->
 
-## Instructions for Installing Simplified Supper
+## Instructions for Installing Tender Tofu
   To launch the Simplified Supper app, you will need to have access to command line tools, node package manager, JSON Server. If you do not have access to any of these tools, you can find instructions for installing them in the [Appendix.](#appendix-2-set-up-instructions)
 
   Clone this repo on you personal machine using the following command
   ```sh
-    git clone git@github.com:kellymorin/simplifiedSupper.git
+    git clone git@github.com:anna-moore/NSS-Front-End-Capstone-Tender-Tofu.git
   ```
 
   Install the NPM dependencies for this project using the following commands
   ```sh
-    cd simplified-supper
+    cd front-end-capstone
     npm install
   ```
 
@@ -55,7 +55,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
     http://localhost:8080/
   ```
 
- ### Congratulations you are now experiencing Simplified Supper!
+ ### Congratulations you are now experiencing Tender Tofu!
 
   ## Appendix 1: Planning Documentation
 
@@ -98,7 +98,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
     /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
   ```
 
-  Now you can follow the [installation instructions](#instructions-for-installing-simplified-supper) to get Simplified Supper up and running on your machine.
+  Now you can follow the [installation instructions](#instructions-for-installing-simplified-supper) to get Tender Tofu up and running on your machine.
 
   This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
