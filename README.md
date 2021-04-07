@@ -23,10 +23,10 @@ Once a user has a recipe on their calendar for the week they will be shown all m
 
 ## Technologies Used
   ### Development Languages and Libraries
-  <img src="./src/images/react.png" width="10%"></img> <img src="./src/images/momentjs.svg" width="10%"></img> <img src="./src/images/semanticui.png" width="10%"></img> <img src="./src/images/reactbigcalendar.png" width="10%"></img>
+  <img src="./src/images/ReactLogo.png" width="10%"></img> <img src="./src/images/gitLogo.png" width="10%"></img> <img src="./src/images/CSS3Icon.png" width="10%"></img> <img src="./src/images/ReactCalendarNPMIcon.png" width="10%"></img>
 
   ### Development Tools
-  <img src="./src/images/github.png" width="10%"></img> <img src="./src/images/draw.io.jpg" width="10%">
+  <img src="./src/images/githubIcon.png" width="10%"></img> <img src="./src/images/DBDiagramIcon.png" width="10%"> <img src="./src/images/VSCodeIcon.png" width="10%"> 
 
 ## Instructions for Installing Tender Tofu
   To launch the Simplified Supper app, you will need to have access to command line tools, node package manager, JSON Server. If you do not have access to any of these tools, you can find instructions for installing them in the [Appendix.](#appendix-2-set-up-instructions)
@@ -57,7 +57,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
   ## Appendix 1: Planning Documentation
 
   ### Entity Relationship Diagram
-  ![Simplified Supper ERD](/src/images/Simplified_Supper_ERD.png)
+  ![Tender Tofu ERD](/src/images/Tender Tofu ERD.png)
 
   ### Wireframes/ Mockups
   <img src="./src/images/wireframe_1.png" width="45%"></img> <img src="./src/images/wireframe_2.png" width="45%"></img>
