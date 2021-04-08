@@ -23,7 +23,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
 
 ## Technologies Used
   ### Development Languages and Libraries
-  <img src="./src/images/ReactLogo.png" width="10%"></img> <img src="./src/images/gitLogo.png" width="10%"></img> <img src="./src/images/CSS3Icon.png" width="10%"></img> <img src="./src/images/ReactCalenderNPMIcon.png" width="10%"></img>
+  <img src="./src/images/ReactLogo.png" width="15%"></img> <img src="./src/images/gitLogo.png" width="10%"></img> <img src="./src/images/CSS3Icon.png" width="10%"></img> <img src="./src/images/ReactCalenderNPMIcon.png" width="10%"></img>
 
   ### Development Tools
   <img src="./src/images/githubIcon.png" width="10%"></img> <img src="./src/images/DBDiagramIcon.png" width="10%"> <img src="./src/images/VSCodeIcon.png" width="10%"> 
