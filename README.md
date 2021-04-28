@@ -57,7 +57,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
   ## Appendix 1: Planning Documentation
 
   ### Entity Relationship Diagram
-  ![Tender Tofu ERD](/src/images/Tender Tofu ERD.png)
+  ![Tender Tofu ERD](/src/images/TenderTofuERD.png)
 
   ### Wireframes/ Mockups
   <img src="./src/images/wireframe_1.png" width="45%"></img> <img src="./src/images/wireframe_2.png" width="45%"></img>
