@@ -60,7 +60,9 @@ Once a user has a recipe on their calendar for the week they will be shown all m
   ![Tender Tofu ERD](/src/images/TenderTofuERD.png)
 
   ### Wireframes/ Mockups
-  <img src="./src/images/wireframe_1.png" width="45%"></img> <img src="./src/images/wireframe_2.png" width="45%"></img>
+  <img src="./src/images/WireFrame1.png" width="50%"></img> 
+  <img src="./src/images/WireFrame2.png" width="50%"></img> 
+  <img src="./src/images/WireFrame3.png" width="50%"></img> 
   
 
 
