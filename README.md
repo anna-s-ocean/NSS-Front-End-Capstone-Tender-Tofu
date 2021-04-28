@@ -14,7 +14,7 @@
 
 ## Project Requirements and Features List
 ### Get Started
-When a user first registers an account with Simplified Supper they will be taken through a series of prompts to select their first recipe. By selecting what type of cuisine and course they would like, the user is then presented with all recipes that match their search and are able to select any of them to view more details or add to the calendar, where they can then view their suggested recipes.
+When a user first registers an account with Tender Tofu they will be taken through a series of prompts to select their first recipe. By selecting what type of cuisine and course they would like, the user is then presented with all recipes that match their search and are able to select any of them to view more details or add to the calendar, where they can then view their suggested recipes.
 ![Get Started GIF](src/gif/get-started-view.gif)
 
 ### Suggested Recipes
@@ -23,10 +23,10 @@ Once a user has a recipe on their calendar for the week they will be shown all m
 
 ## Technologies Used
   ### Development Languages and Libraries
-  <img src="./src/images/react.png" width="10%"></img> <img src="./src/images/momentjs.svg" width="10%"></img> <img src="./src/images/semanticui.png" width="10%"></img> <img src="./src/images/reactbigcalendar.png" width="10%"></img>
+  <img src="./src/images/ReactLogo.png" width="15%"></img> <img src="./src/images/gitLogo.png" width="10%"></img> <img src="./src/images/CSS3Icon.png" width="7%"></img> <img src="./src/images/ReactCalenderNPMIcon.png" width="10%"></img>
 
   ### Development Tools
-  <img src="./src/images/github.png" width="10%"></img> <img src="./src/images/draw.io.jpg" width="10%">
+  <img src="./src/images/githubIcon.png" width="10%"></img> <img src="./src/images/DBDiagramIcon.png" width="10%"> <img src="./src/images/VSCodeIcon.png" width="10%"> 
 
 ## Instructions for Installing Tender Tofu
   To launch the Simplified Supper app, you will need to have access to command line tools, node package manager, JSON Server. If you do not have access to any of these tools, you can find instructions for installing them in the [Appendix.](#appendix-2-set-up-instructions)
@@ -57,7 +57,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
   ## Appendix 1: Planning Documentation
 
   ### Entity Relationship Diagram
-  ![Simplified Supper ERD](/src/images/Simplified_Supper_ERD.png)
+  ![Tender Tofu ERD](/src/images/Tender Tofu ERD.png)
 
   ### Wireframes/ Mockups
   <img src="./src/images/wireframe_1.png" width="45%"></img> <img src="./src/images/wireframe_2.png" width="45%"></img>
