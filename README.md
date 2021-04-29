@@ -59,7 +59,7 @@ Once a user has a recipe on their calendar for the week they will be shown all m
   ### Entity Relationship Diagram
   ![Tender Tofu ERD](/src/images/TenderTofuERD.png)
 
-  ### Wireframes/ Mockups
+  ### Wireframes
   <img src="./src/images/Wireframe1.png" width="60%"></img> 
   <img src="./src/images/WireFrame2.png" width="60%"></img> 
   <img src="./src/images/WireFrame3.png" width="60%"></img> 
