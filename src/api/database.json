@@ -371,6 +371,160 @@
       "userId": 1,
       "eateryOutingId": 13,
       "id": 56
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 57
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 58
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 59
+    },
+    {
+      "restaurantId": "C8pZeqR_g_lDa0vom1ECdQ",
+      "restaurantName": "Black Dynasty Ramen",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 60
+    },
+    {
+      "restaurantId": "Yu_tXvUoyOj5SpeDUOZwnQ",
+      "restaurantName": "The BE Hive",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 61
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 62
+    },
+    {
+      "restaurantId": "tAYDA1RuZfG88zF6Pzp8cw",
+      "restaurantName": "615 Chutney",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 63
+    },
+    {
+      "restaurantId": "yE1raqkLX7OZsjmX3qKIKg",
+      "restaurantName": "Butcher & Bee",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 64
+    },
+    {
+      "restaurantId": "nlNAluD3re_KnCcQHuZc2A",
+      "restaurantName": "Steam Boys",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 65
+    },
+    {
+      "restaurantId": "8jwsNjvVNJiYN7AnxHdMLA",
+      "restaurantName": "Yeast Nashville",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 66
+    },
+    {
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
+      "restaurantName": "E+ROSE Wellness Bodega at 505",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 67
+    },
+    {
+      "restaurantId": "2CDVg_FOYIGov_8VMzsjrA",
+      "restaurantName": "Hearts",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 68
+    },
+    {
+      "restaurantId": "rs2OZH_vIKgW2Zk59OnZ2A",
+      "restaurantName": "Falcon Coffee Bar",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 69
+    },
+    {
+      "restaurantId": "TVO-R_N5CGCNum4-TjrLDA",
+      "restaurantName": "Hawkers Asian Street Food - Nashville",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 70
+    },
+    {
+      "restaurantId": "999BA3SLLoev5YU_dMpvnA",
+      "restaurantName": "Slim & Husky's Pizza Beeria",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 71
+    },
+    {
+      "restaurantId": "aiThB016Yk5mcauVKtSpNA",
+      "restaurantName": "Jamaicaway Restaurant & Catering",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 72
+    },
+    {
+      "restaurantId": "2QD1Lv4bKTqOhijz07xTeA",
+      "restaurantName": "Kokos Plant Based Ice Cream",
+      "userId": 1,
+      "eateryOutingId": 7,
+      "id": 73
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 74
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 75
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 76
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 77
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 78
     }
   ],
   "eateryOutings": [
@@ -495,6 +649,18 @@
       "friendId": 2,
       "dateTime": "2021-02-09T06:00:00.000Z",
       "id": 17
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-05-14T05:00:00.000Z",
+      "id": 18
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-05-15T05:00:00.000Z",
+      "id": 19
     }
   ]
 }
