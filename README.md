@@ -14,12 +14,12 @@
 
 ## Project Requirements and Features List
 ### Get Started
-When a user first registers an account with Tender Tofu they will be taken through a series of prompts to select their first recipe. By selecting what type of cuisine and course they would like, the user is then presented with all recipes that match their search and are able to select any of them to view more details or add to the calendar, where they can then view their suggested recipes.
-![Get Started GIF](src/gif/get-started-view.gif)
+When a user first registers/ logs into an account with Tender Tofu they will be presented with a form to select their friend from a drop down and a date for an eatery outign. By selecting the date and friend, the user is then presented with local vegetarian restuarant theat they can accept or pass on. The user contining to select until they have reached the end of the list.
+![Get Started GIF](src/images/gif/TenderTofuGIF-downsized.gif)
 
-### Suggested Recipes
-Once a user has a recipe on their calendar for the week they will be shown all matched recipes in order from highest percentage match of similar ingredients to lowest percentage match of similar ingredients. They can filter these results by cuisine and course, results will be updated in real time. They can also edit the recipes on their calendar or delete any recipes on their calendar and matched recipes will change accordingly.
-![Recipe Suggestion Engine GIF](src/gif/recipe-suggestion-engine.gif)
+### Friend's Turn
+The friend that the user above has selected nnow opens the app and navigates to the Friend's Turn to Swipe page and selects the outing with the first user and the agreed upon date. Then the seconnd user is prompted with the same list as list user one. They also select Yummy or Pass as before. Through the use of short polling, once the friend/ second user has selected a restaurant in common a window alert with restaurant that both user like with appear in both user bowsers.  
+![Restaurant Gif](src/images/gif/TenderTofuRestaurantPics.gif)
 
 ## Technologies Used
   ### Development Languages and Libraries
@@ -46,8 +46,12 @@ Once a user has a recipe on their calendar for the week they will be shown all m
   ```sh
     npm start
   ```
+  Open another tab in your terminal window and cd into the API directiory, type
+  ```sh
+  json-server -p 8088 -w database.json
+  ```
 
-  Now that the server is up and running, you can open an internet browser and access the application
+  Now that the server is up and running, you can open an internet browser and access API of the application
   ```sh
     http://localhost:8080/
   ```
