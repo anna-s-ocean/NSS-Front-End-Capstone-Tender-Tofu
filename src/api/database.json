@@ -490,6 +490,41 @@
       "userId": 1,
       "eateryOutingId": 7,
       "id": 73
+    },
+    {
+      "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
+      "restaurantName": "Graze Nashville",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 74
+    },
+    {
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "restaurantName": "Avo",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 75
+    },
+    {
+      "restaurantId": "QRzaTTTE7QrqjW2GOQIrtA",
+      "restaurantName": "Vege-licious",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 76
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 77
+    },
+    {
+      "restaurantId": "f9qNygjcQvh2vPmZSfEvqg",
+      "restaurantName": "Sunflower Cafe",
+      "userId": 2,
+      "eateryOutingId": 19,
+      "id": 78
     }
   ],
   "eateryOutings": [
@@ -614,6 +649,18 @@
       "friendId": 2,
       "dateTime": "2021-02-09T06:00:00.000Z",
       "id": 17
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-05-14T05:00:00.000Z",
+      "id": 18
+    },
+    {
+      "userId": 2,
+      "friendId": 3,
+      "dateTime": "2021-05-15T05:00:00.000Z",
+      "id": 19
     }
   ]
 }

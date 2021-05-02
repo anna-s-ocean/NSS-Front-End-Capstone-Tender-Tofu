@@ -60,7 +60,7 @@ export const Register = (props) => {
                 <h1 className="h3 mb-3 font-weight-normal">Please Register for Tender Tofu</h1>
                 <fieldset>
                     <label style={{frontWeigth: "bold"}} className="font-weight-bold" htmlFor="firstName"> First Name </label>
-                    <input ref={firstName} style={{width: "50%"}}
+                    <input ref={firstName} style={{width: "60%"}}
                             type="text" 
                             name="firstName" 
                             className="form-control" 
@@ -70,7 +70,7 @@ export const Register = (props) => {
                 </fieldset>
                 <fieldset>
                     <label htmlFor="lastName"> Last Name </label>
-                    <input ref={lastName} style={{width: "50%"}} 
+                    <input ref={lastName} style={{width: "60%"}} 
                             type="text" 
                             name="lastName" 
                             className="form-control" 
@@ -80,7 +80,7 @@ export const Register = (props) => {
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputEmail"> Email address </label>
-                    <input ref={email} style={{width: "50%"}}
+                    <input ref={email} style={{width: "60%"}}
                             type="text" 
                             name="email" 
                             className="form-control" 

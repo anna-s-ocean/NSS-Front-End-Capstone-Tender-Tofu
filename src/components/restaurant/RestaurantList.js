@@ -97,13 +97,11 @@ export const RestaurantList = () => {
    
    //filter to determine if a restaurant id is on the same list twice
    useInterval(  () => {
-    console.log("Checking for matching restaurantId in singleUserRestaurantMatches with the same eateryOuting Id")
+    //console.log("Checking for matching restaurantId in singleUserRestaurantMatches with the same eateryOuting Id")
   
     getSingleMatchesByEateryOutingId(parseInt(eateryOutingFromParamsId))
     .then(res => {
-      console.log("first console of res" ,res)
-      res.sort(compare)
-      console.log("second console of res" ,res)
+      res.sort(compare)     
       for( let i= 0;  i < res.length -1 ; i++){
          
         if(res[i].restaurantId === res[i+ 1].restaurantId){ //this is the match
