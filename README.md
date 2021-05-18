@@ -1,6 +1,6 @@
 # Tender Tofu
 
-  Tender Tofu is intented to  take all of the guesswork out of determining where to eat vegetarian cuisine in Nashville. By presenting numerous of the restaurant choices for both users to chose from, Tender Tofu presents the restaurant favorite they have in common for the particular outing.
+  Tender Tofu is intended to  take all of the guesswork out of determining where to eat vegetarian cuisine in Nashville. By presenting numerous of the restaurant choices for both users to choose from, Tender Tofu presents the restaurant favorite they have in common for the particular outing.
   
 
 ## Table of Contents
