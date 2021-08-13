@@ -427,6 +427,13 @@
       "userId": 2,
       "eateryOutingId": 19,
       "id": 78
+    },
+    {
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ",
+      "restaurantName": "The Southern V",
+      "userId": 2,
+      "eateryOutingId": 20,
+      "id": 79
     }
   ],
   "eateryOutings": [
@@ -437,14 +444,14 @@
       "dateTime": 98723987204,
       "restaurantName": "The Wild Cow",
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 3,
       "dateTime": "2021-02-02T06:00:00.000Z",
       "id": 2,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 1,
@@ -453,21 +460,21 @@
       "id": 3,
       "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
       "restaurantName": "Graze Nashville",
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 3,
       "dateTime": "2021-02-08T06:00:00.000Z",
       "id": 4,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 1,
       "dateTime": "2021-02-10T06:00:00.000Z",
       "id": 5,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 3,
@@ -476,14 +483,14 @@
       "id": 6,
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
       "restaurantName": "The Wild Cow",
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 1,
       "dateTime": "2021-02-13T06:00:00.000Z",
       "id": 7,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 2,
@@ -492,21 +499,21 @@
       "id": 8,
       "restaurantName": "The Wild Cow",
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 2,
       "dateTime": "2021-02-13T06:00:00.000Z",
       "id": 9,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 1,
       "dateTime": "2021-02-11T06:00:00.000Z",
       "id": 10,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 4,
@@ -515,7 +522,7 @@
       "id": 11,
       "restaurantName": "Avo",
       "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 4,
@@ -524,50 +531,58 @@
       "id": 13,
       "restaurantName": "E+ROSE Wellness Bodega at 505",
       "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 1,
       "dateTime": "2021-02-11T06:00:00.000Z",
       "id": 13,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 3,
       "dateTime": "2021-02-20T06:00:00.000Z",
       "id": 14,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 4,
       "dateTime": "2021-02-18T06:00:00.000Z",
       "id": 15,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 3,
       "dateTime": "2021-02-09T06:00:00.000Z",
       "id": 16,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 2,
       "dateTime": "2021-02-09T06:00:00.000Z",
       "id": 17,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
     },
-
     {
       "userId": 2,
       "friendId": 3,
       "dateTime": "2021-05-15T05:00:00.000Z",
       "id": 19,
-      "EventTitle" : "Monthly Catch Up"
+      "eventTitle": "Monthly Catch Up"
+    },
+    {
+      "userId": 2,
+      "friendId": 1,
+      "dateTime": "2021-08-19T05:00:00.000Z",
+      "eventTitle": "Birthday",
+      "id": 20,
+      "restaurantName": "The Southern V",
+      "restaurantId": "w1rUV5W_TJ0M0MRwwrseWQ"
     }
   ]
 }

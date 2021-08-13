@@ -40,7 +40,7 @@ export const MatchCard = ({match}) => {
             <h3 className="match__restaurantName">{ match.restaurantName}</h3>
             <div className="match_friends">Friends: {user.name}  and  {friend.name}</div>
             <div className="match__dateTime">{ new Date(match.dateTime).toLocaleDateString()}</div>
-            <div className="match_EventTitle">Event: {match.EventTitle}</div>
+            <div className="match_EventTitle">Event: {match.eventTitle}</div>
             {/* <button >Edit</button> */}
             <button className="match__Delete__BTN" onClick={handleClickDeleteEateryOuting}> Delete</button>
         </section>

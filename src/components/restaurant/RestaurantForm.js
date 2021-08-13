@@ -20,15 +20,15 @@ export const RestaurantForm = () => {
 
 
     //what is going to be updated
-    //user name of current user
-    //user name of friend/user selected
-    //date and time range id 
+    //user name of current user && user name of friend/user selected
+    //date and time range id && reason for gathering 
     //set empty for now or set as 0 and update later
-    //restaurant foriegn key and restaurant name
+    //restaurant foriegn key and restaurant name NO
     const [restaurant, setRestaurant] = useState({
         userId: currentUserId,
         friendId: 0,
-        dateTime: null
+        eventTitle: "",
+        dateTime: null,
       });
 
 
@@ -38,12 +38,10 @@ export const RestaurantForm = () => {
 
       useEffect( () => {
         getUsers()
-
       }, [])
 
     
-      //when a field changes, update state. The return will re-render and display based on the values in state
-    //Controlled component
+    //when a field changes, update state. The return will re-render and display based on the values in state
     const handleControlledInputChange = (event) => {
         /* When changing a state object or array,
         always create a copy, make changes, and then set state.*/
@@ -123,8 +121,8 @@ export const RestaurantForm = () => {
           <fieldset>
             <div className="form-group">
               <label htmlFor="EventName">Purpose of Event </label>
-              <input type="text" id="eventName" onChange={handleControlledInputChange}
-              required autoFocus className="form-control" placeholder="Why are we getting together?" value={restaurant.EventTitle} />        
+              <input type="text" id="eventTitle" onChange={event => handleControlledInputChange(event)}
+              required autoFocus className="form-control" placeholder="Why are we getting together?" value={restaurant.eventTitle} />        
             </div>
           </fieldset>
 
