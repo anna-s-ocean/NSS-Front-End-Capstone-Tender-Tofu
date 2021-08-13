@@ -46,7 +46,7 @@ The friend that the user above has selected nnow opens the app and navigates to 
   ```sh
     npm start
   ```
-  Open another tab in your terminal window and cd into the API directiory, type
+  Open another tab in your terminal window and cd into the API directiory located in the src directory, type
   ```sh
   json-server -p 8088 -w database.json
   ```

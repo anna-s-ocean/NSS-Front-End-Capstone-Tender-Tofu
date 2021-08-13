@@ -436,13 +436,15 @@
       "friendId": 2,
       "dateTime": 98723987204,
       "restaurantName": "The Wild Cow",
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg"
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 3,
       "dateTime": "2021-02-02T06:00:00.000Z",
-      "id": 2
+      "id": 2,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 1,
@@ -450,19 +452,22 @@
       "dateTime": "2021-02-22T06:00:00.000Z",
       "id": 3,
       "restaurantId": "tLVnL8CqQYiMU6E_aayYog",
-      "restaurantName": "Graze Nashville"
+      "restaurantName": "Graze Nashville",
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 3,
       "dateTime": "2021-02-08T06:00:00.000Z",
-      "id": 4
+      "id": 4,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 1,
       "dateTime": "2021-02-10T06:00:00.000Z",
-      "id": 5
+      "id": 5,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 3,
@@ -470,13 +475,15 @@
       "dateTime": "2021-02-10T06:00:00.000Z",
       "id": 6,
       "restaurantId": "zJmp_J8SUNosLxk6borpFg",
-      "restaurantName": "The Wild Cow"
+      "restaurantName": "The Wild Cow",
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 1,
       "dateTime": "2021-02-13T06:00:00.000Z",
-      "id": 7
+      "id": 7,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 2,
@@ -484,19 +491,22 @@
       "dateTime": "2021-02-11T06:00:00.000Z",
       "id": 8,
       "restaurantName": "The Wild Cow",
-      "restaurantId": "zJmp_J8SUNosLxk6borpFg"
+      "restaurantId": "zJmp_J8SUNosLxk6borpFg",
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 2,
       "dateTime": "2021-02-13T06:00:00.000Z",
-      "id": 9
+      "id": 9,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 1,
       "dateTime": "2021-02-11T06:00:00.000Z",
-      "id": 10
+      "id": 10,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 4,
@@ -504,7 +514,8 @@
       "dateTime": "2021-03-20T05:00:00.000Z",
       "id": 11,
       "restaurantName": "Avo",
-      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg"
+      "restaurantId": "2Z8YwDy6fUUTFFSSNXbLBg",
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 4,
@@ -512,44 +523,51 @@
       "dateTime": "2021-03-28T05:00:00.000Z",
       "id": 13,
       "restaurantName": "E+ROSE Wellness Bodega at 505",
-      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA"
+      "restaurantId": "yKe6c61BxTY6z7YR6zFFFA",
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 2,
       "friendId": 1,
       "dateTime": "2021-02-11T06:00:00.000Z",
-      "id": 13
+      "id": 13,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 3,
       "dateTime": "2021-02-20T06:00:00.000Z",
-      "id": 14
+      "id": 14,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 4,
       "dateTime": "2021-02-18T06:00:00.000Z",
-      "id": 15
+      "id": 15,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 3,
       "dateTime": "2021-02-09T06:00:00.000Z",
-      "id": 16
+      "id": 16,
+      "EventTitle" : "Monthly Catch Up"
     },
     {
       "userId": 1,
       "friendId": 2,
       "dateTime": "2021-02-09T06:00:00.000Z",
-      "id": 17
+      "id": 17,
+      "EventTitle" : "Monthly Catch Up"
     },
 
     {
       "userId": 2,
       "friendId": 3,
       "dateTime": "2021-05-15T05:00:00.000Z",
-      "id": 19
+      "id": 19,
+      "EventTitle" : "Monthly Catch Up"
     }
   ]
 }

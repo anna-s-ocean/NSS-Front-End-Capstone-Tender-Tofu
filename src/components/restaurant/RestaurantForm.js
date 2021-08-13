@@ -96,12 +96,11 @@ export const RestaurantForm = () => {
                       <option value="0">Select a user</option>
                       {users.map(u => {
                         if(u.id != currentUserId){
-
                           return (
                             <option key={u.id} value={u.id}>
                             {u.name}
                             </option>  
-                        )
+                          )
                         }
                         })
                       }
@@ -121,6 +120,14 @@ export const RestaurantForm = () => {
               </div>
             </div>
           </fieldset>
+          <fieldset>
+            <div className="form-group">
+              <label htmlFor="EventName">Purpose of Event </label>
+              <input type="text" id="eventName" onChange={handleControlledInputChange}
+              required autoFocus className="form-control" placeholder="Why are we getting together?" value={restaurant.EventTitle} />        
+            </div>
+          </fieldset>
+
           <button className="btn btn-primary"
             onClick={handleClickSaveRestaurantOuting}>
             Confirm  Outing 

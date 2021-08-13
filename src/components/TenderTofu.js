@@ -13,8 +13,7 @@ export const TenderTofu = () => (
       render={() => {
         if (localStorage.getItem("user_tender_tofu")) {
           return (
-            <>
-              
+            <>             
               <img className="logo__Image" src={TenderTofuLogo} alt="logo for Tender Tofu" /> 
              
               <NavBar />

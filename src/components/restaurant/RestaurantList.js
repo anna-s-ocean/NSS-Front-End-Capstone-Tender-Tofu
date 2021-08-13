@@ -92,8 +92,6 @@ export const RestaurantList = () => {
     }
     return comparison;
   }
-  
-  
    
    //filter to determine if a restaurant id is on the same list twice
    useInterval(  () => {
@@ -112,8 +110,7 @@ export const RestaurantList = () => {
           .then(window.alert("a match has been found " + res[i].restaurantName))
           history.push("/plannedOutings")
           
-          return
-          
+          return       
         }
       }
     })
