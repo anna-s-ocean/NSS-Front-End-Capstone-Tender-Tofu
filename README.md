@@ -1,6 +1,6 @@
 # Tender Tofu
 
-  Tender Tofu is intented to  take all of the guesswork out of determining where to eat vegetarian cuisine in Nashville. By presenting numerous of the restaurant choices for both users to chose from, Tender Tofu presents the restaurant favorite they have in common for the particular outing.
+  Tender Tofu is intended to  take all of the guesswork out of determining where to eat vegetarian cuisine in Nashville. By presenting numerous of the restaurant choices for both users to choose from, Tender Tofu presents the restaurant favorite they have in common for the particular outing.
   
 
 ## Table of Contents
@@ -18,7 +18,7 @@ When a user first registers/ logs into an account with Tender Tofu they will be 
 ![Get Started GIF](src/images/gif/TenderTofuGIF-downsized.gif)
 
 ### Friend's Turn
-The friend that the user above has selected nnow opens the app and navigates to the Friend's Turn to Swipe page and selects the outing with the first user and the agreed upon date. Then the seconnd user is prompted with the same list as list user one. They also select Yummy or Pass as before. Through the use of short polling, once the friend/ second user has selected a restaurant in common a window alert with restaurant that both user like with appear in both user bowsers.  
+The friend that the user above has selected now opens the app and navigates to the Friend's Turn to Swipe page and selects the outing with the first user and the agreed upon date. Then the seconnd user is prompted with the same list as list user one. They also select Yummy or Pass as before. Through the use of short polling, once the friend/ second user has selected a restaurant in common a window alert with restaurant that both user like with appear in both user bowsers.  
 ![Restaurant Gif](src/images/gif/TenderTofuRestaurantPics.gif)
 
 ## Technologies Used
@@ -29,7 +29,7 @@ The friend that the user above has selected nnow opens the app and navigates to 
   <img src="./src/images/githubIcon.png" width="10%"></img> <img src="./src/images/DBDiagramIcon.png" width="10%"> <img src="./src/images/VSCodeIcon.png" width="10%"> 
 
 ## Instructions for Installing Tender Tofu
-  To launch the Simplified Supper app, you will need to have access to command line tools, node package manager, JSON Server. If you do not have access to any of these tools, you can find instructions for installing them in the [Appendix.](#appendix-2-set-up-instructions)
+  To launch the Tender Tofu app, you will need to have access to command line tools, node package manager, JSON Server. If you do not have access to any of these tools, you can find instructions for installing them in the [Appendix.](#appendix-2-set-up-instructions)
 
   Clone this repo on you personal machine using the following command
   ```sh
