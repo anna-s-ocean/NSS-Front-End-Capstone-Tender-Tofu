@@ -10,7 +10,7 @@ export const Home = () => (
             <div>Nashville  Location</div>
             <div>500 Way</div>
         </address>
-        {/* <PropsAndState yourName={"Isabel"} /> */}
+        
         
     </>
 )
