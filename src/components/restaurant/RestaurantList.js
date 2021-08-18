@@ -74,9 +74,10 @@ export const RestaurantList = () => {
         
       }
       // else add field for displaying a message saying you have run out of restaurants 
-      // else {
-      //   window.alert("I guess you didn't want to go to dinner 🤷")
-      // }
+      else {
+        window.alert("You have reached the end of the list. Wait for your partner to input their choices.")
+        history.push("/plannedOutings")
+      }
   }
 
   function compare(a, b) {
