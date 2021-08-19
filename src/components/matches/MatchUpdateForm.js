@@ -6,6 +6,7 @@ import  { Calendar } from 'react-calendar'
 
 export const MatchUpateForm = () => {
     const history = useHistory();
+    const { getMatches, updateEateryOuting } = useContext(MatchesContext)
     const [isLoading, setIsLoading] = useState(true);
 
     const [match, setMatch] = useState({
@@ -16,7 +17,7 @@ export const MatchUpateForm = () => {
 
       useEffect( () => {
         //load all the matches
-        getSingl
+        getMatches();
       }, [])
 
       //handle contolled input change
