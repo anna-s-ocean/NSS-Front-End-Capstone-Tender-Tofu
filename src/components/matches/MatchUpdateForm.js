@@ -4,7 +4,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import  { Calendar } from 'react-calendar'
 
 
-export const MatchUpateForm = () => {
+export const MatchUpdateForm = () => {
     const history = useHistory();
     const { getMatches, updateEateryOuting } = useContext(MatchesContext)
     const [isLoading, setIsLoading] = useState(true);

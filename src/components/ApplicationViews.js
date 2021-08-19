@@ -13,6 +13,7 @@ import { EateryOutingProvider } from "./matches/EateryOutingProvider"
 import { SingleMatchesProvider } from "./matches/SingleMatchProvider"
 import { EateryOutingSelectList } from "./matches/EateryOutingSelectList"
 import { MatchesList } from "./matches/MatchesList"
+import { MatchUpdateForm } from "./matches/MatchUpdateForm"
 
 export const ApplicationViews = () => {
     return (
@@ -50,6 +51,9 @@ export const ApplicationViews = () => {
                             </Route>
                             <Route exact path="/halfwayFilledOutEateryFormNowFriendSelects">
                                 <EateryOutingSelectList />
+                            </Route>
+                            <Route exact path ="/matchUpdate">
+                                <MatchUpdateForm />
                             </Route>
                         </RestaurantProvider>
                     </UserProvider>
