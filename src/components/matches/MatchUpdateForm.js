@@ -21,7 +21,21 @@ export const MatchUpateForm = () => {
       }, [])
 
       //handle contolled input change
-
+      const handleControlledInputChange = (event) => {
+        const newMatch = { ...match }
+        if (typeof event.getMonth === 'function'){
+          console.log(event, "this is the date from the calender")
+          new match.dateTime = event
+        }else {
+          let selectedVal = event.target.value
+          if (event.target.id.includes("Id")) {
+            selectedVal = parseInt(selectedVal)
+          }
+          newMatch[event.target.id] = selectedVal
+        }
+        // update state
+        setMatch(newMatch)
+      }
       //handle click change 
       const handleClickSaveMatchUpdate = (event) => {
           event.preventDefault()
