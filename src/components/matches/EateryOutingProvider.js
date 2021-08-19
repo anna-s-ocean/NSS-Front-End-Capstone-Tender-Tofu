@@ -51,15 +51,18 @@ export const EateryOutingProvider = (props) => {
     //   }
 
       //update the eatery outing with patch 
-      const updateEateryOuting = (id,  restaurantName, restaurantId) => {
+      const updateEateryOuting = (id, eventTitle, dateTime ) => {
+        //restaurantName, restaurantId 
           return fetch(`http://localhost:8088/eateryOutings/${id}`, {
               method: "PATCH",
               headers: {
                 "Content-Type": "application/json"
             },
               body: JSON.stringify({
-                  restaurantName: restaurantName,
-                  restaurantId: restaurantId
+                //   restaurantName: restaurantName,
+                //   restaurantId: restaurantId,
+                eventTitle: eventTitle,
+                dateTime: dateTime,
               })  
           })
           .then( res => res.json())
