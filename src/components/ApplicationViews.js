@@ -18,8 +18,7 @@ import { MatchUpdateForm } from "./matches/MatchUpdateForm"
 export const ApplicationViews = () => {
     return (
         <>
-             
-
+            
             {/* Render the user list when http://localhost:3000/users */}
             {/* <UserProvider>
                 <Route path="/users">
