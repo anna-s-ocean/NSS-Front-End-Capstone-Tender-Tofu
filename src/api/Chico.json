@@ -1,0 +1,34 @@
+{
+  "neighborhoodsOfChicago": [
+    {
+      "id": 1,
+      "name": "Albany Park",
+      "desp": "Located on the Northwest Side of the City of Chicago with the North Branch of the Chicago River forming its east and north boundaries, it includes the ethnically diverse Albany Park neighborhood, with one of the highest percentages of foreign-born residents of any Chicago neighborhood.",
+      "avgRent": 1500 ,
+    },
+    {
+      "name": "Altgeld Gardens",
+      "id": 2,
+      "desp": "Named for the Altgeld Garden Homes, a CHA public housing project. A 1978 survey of Chicago residents performed by the Department of Planning gives the neighborhood boundaries for the Altgeld Gardens neighborhood as 130th Street in the north to the Calumet River in the south, and from approximately Langley Ave. in the west to the railroad tracks west of Doty Ave. in the east.",
+      "avgRent": 2000,
+    },
+    {  
+      "name": "Andersonville",
+      "id": 3,
+      "desp": "Sample Text",
+      "avgRent": 1000,
+    },
+    {     
+      "name": "Arcadia Terrace",
+      "id": 4,
+      "desp": "Sample Text",
+      "avgRent": 900,
+    }, 
+      {     
+      "name": "Archer Heights",
+      "id": 5,
+      "desp": "Sample Text",
+      "avgRent": 2500,
+    }
+  ],
+}
